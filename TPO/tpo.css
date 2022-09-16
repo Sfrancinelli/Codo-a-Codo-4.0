@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
 }
 
 /* GRID CONFIG */
@@ -36,7 +36,6 @@ body {
     color: black;
     font-family: "Sofia", sans-serif;
     /* font-family: Lato; */
-    font-size: 1.2rem;
 }
 
 /* HEADER CONFIG FLEX PADRE */
@@ -45,19 +44,23 @@ body {
     background-color: #F2F2F2;
     color: #323436;
     grid-area: header;
-    display: flex;
+    display: flex; 
     justify-content: space-evenly;
-    box-shadow: 0 0 0.5rem rgb(83,78,76)
+    align-content:space-between;
+    box-shadow: 0 0 0.5rem rgb(83,78,76);
+    flex: 1 1 auto;
+    height: 100%;
+    padding: 5px;
 }
 
 /* ITEMS HEADER (FLEX) */
 .logo-container {
-    display:inline-flex;
+    display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     border-radius: 4px;
-    border: 1px solid #247881;
+    /* border: 1px solid #247881; */
     width: 3.5%;
     overflow: auto;
     min-width: 65px;
@@ -68,22 +71,43 @@ body {
     width: 100%;
 }
 
+/* TOP NAVBAR */
+.top-navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #237881;
+    width: 90%;
+    height: 50%;
+    margin-left: 1rem;
+    font-size: 1rem;
+    overflow: auto;
+}
+
 /* PADRE NAVBAR */
 .resto-header {
-    display: inline-flex;
+    display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: flex-end;
     border-radius: 4px;
     border: 1px solid #237881;
-    width: 80%;
+    width: 90%;
+    height: 50%;
     margin-left: 1rem;
     font-size: 1rem;
     overflow: auto;
 }
 
 /* NAVBAR CONFIG */
+.nav-bar {
+    height: 60%;
+}
+
 .nav-bar ul {
     list-style: none;
 }
@@ -106,21 +130,21 @@ body {
 }
 
 .nav-bar li a:hover {
-    color: #00FFC6;
+    color: #00FFC6; /* <-- PROVISIONAL */
 }
 
 /* PADRE FLEX LOG IN + ICONS */
 .flex-log-icon {
-    display: inline-flex;
+    display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
+    align-content: space-between;
     justify-content: center;
     border: 1px solid #237881;
-    margin: 0 2rem 0 2rem;
-    padding: 0.2rem;
-    max-width: 101.38px;
-    min-width: 101.38px;
+    margin: 0 5rem 0.2rem 0.5rem 0.2rem ;
+    padding: 0.5rem;
+    max-width: 125.38px;
+    min-width: 125.38px;
     max-height: 73px;
 }
 
@@ -130,11 +154,20 @@ body {
 
 .log-in a {
     text-decoration: none;
-    color: #00A9B0;
+    color: white;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    width: 9rem;
+    border-radius: 10px;
+    background: linear-gradient(96deg, rgb(61, 204, 233) 0%, rgb(135, 232, 252) 100%);
+    /* transition: all 2s ease-in-out; */
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
 }
 
 .log-in a:hover {
-    color: #00FFC6;
+    color: white;
+    background: linear-gradient(96deg, rgb(61, 204, 233) 0%, #D2ED54 100%);
 }
 
 .icons-nav {
@@ -142,13 +175,13 @@ body {
 }
 
 .icons-nav a:hover {
-    color: #00FFC6;
+    color: #00FFC6; /* <--PROVISIONAL*/
 }
 
 /* MAIN CONTENT */
 .root .contenido-ppal {
     grid-area: main;
-    box-shadow: 0 0 0.5rem rgb(83,78,76)
+    box-shadow: 0 0 0.5rem rgb(83,78,76);
 }
 
 /* SIDEBAR */
@@ -159,6 +192,7 @@ body {
 	text-align: center;
 	min-height: 50px;
     grid-area: aside;
+    box-shadow: 0 0 0.5rem rgb(83,78,76);
 }
 
 /* FOOTER CONFIG */
@@ -166,7 +200,7 @@ body {
     background-color: #43919B;
     color: #323436;
     grid-area: footer;
-    box-shadow: 0 0 0.5rem rgb(83,78,76)
+    box-shadow: 0 0 0.5rem rgb(83,78,76);
 }
 
 /* BREAKPOINTS */
@@ -187,4 +221,36 @@ body {
 						    "footer footer footer footer";
 	}
 }
+
+/* FONT BREAKPOINTS */
+@media (min-width: 1360px){
+    .root {
+    font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1280px){
+    .root {
+    font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .root {
+    font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .root {
+    font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 662px) {
+    .root {
+    font-size: 1rem;
+    }
+}
+
 
