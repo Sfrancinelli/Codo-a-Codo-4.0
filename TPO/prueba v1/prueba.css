@@ -96,7 +96,7 @@ body {
     height: 65%;
     padding: 0.2vw 0 1vw 0;
     margin-left: 1rem;
-    font-size: 1rem;
+    font-size: 1vw;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     
@@ -124,7 +124,7 @@ body {
     height: 90%;
     padding: 10px 0 10px 0;
     margin-left: 1rem;
-    font-size: 1rem;
+    font-size: 1.3vw;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
 }
