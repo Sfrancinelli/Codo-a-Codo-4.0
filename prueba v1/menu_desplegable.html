@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu_desplegable.css">
+    <script src="https://kit.fontawesome.com/a6123d0355.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Lato">
+    <title>TPO</title>
+    <style>
+        /* Center the loader */
+    #loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 120px;
+      height: 120px;
+      margin: -76px 0 0 -76px;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* Add animation to "page content" */
+    .animate-bottom {
+      position: relative;
+      -webkit-animation-name: animatebottom;
+      -webkit-animation-duration: 1s;
+      animation-name: animatebottom;
+      animation-duration: 1s
+    }
+    
+    @-webkit-keyframes animatebottom {
+      from { bottom:-100px; opacity:0 } 
+      to { bottom:0px; opacity:1 }
+    }
+    
+    @keyframes animatebottom { 
+      from{ bottom:-100px; opacity:0 } 
+      to{ bottom:0; opacity:1 }
+    }
+    
+    #myDiv {
+      display: none;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <header class="encabezado">
+                <div class="logo-container">
+                    <a class="logo" href="index.html">
+                    <img src="img/LOGO-PRUEBA.png" alt="Logo TPO">
+                    </a>
+                </div>
+                <div class="resto-header">  <!--FLEX--> 
+                    <div class="nav-bar">
+                        <nav class="nav">
+                            <ul class="desplegable">
+                                <hr>
+                                <br>
+                                <li class="title">MENU</li>
+                                <br>
+                                <hr>
+                                   <ul class="inicio">
+                                <li><a aria-current="page" class="active" href="#"> INICIO </a></li>
+                                <li><a href="#"> INSTITUCIONAL </a></li>
+                                <li><a href="#"> ASISTENCIA AL PACIENTE </a></li>
+                                <li><a href="#"> NOVEDADES </a></li>
+                                <li><a href="#"> CONTACTO </a></li>
+                            </ul>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="top-navbar">
+                    <div class="item1">
+                        <img src="img/direccion.svg" alt="Icon Dirección" class="item-icon1">
+                        <span class="direccion">Florida 325</span>
+                    </div>
+                    <div class="item2">
+                        <img src="img/telefono.svg" alt="Icon Teléfono" class="item-icon2">
+                        <span class="telefono">4581-8538</span>
+                    </div>
+                    <div class="item3">
+                        <img src="img/whatsapp.svg" alt="Icon Whatsapp" class="item-icon3">
+                        <span class="whatsapp">11 4805-7548</span>
+                    </div>
+                    <div class="item4">
+                        <img src="img/horario.svg" alt="Icon Horario" class="item-icon4">
+                        <span class="horario">Lun a Vie:8 a 20hs. y Sab:9 a 12hs.</span>
+                    </div>
+                </div>
+                <div class="flex-log-icon">
+                     <div class="log-in">
+                    <!-- Aca boton de log in arriba a la derecha? -->
+                        <a target="_blank" rel="noopener noreferrer" href="#" class="boton-log">Log in</a>
+                    </div>  
+                    <div class="icons-nav">
+                        <a class="redsoc" href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="redsoc" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="redsoc" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="redsoc" target="_blank" href="mailto:ejemplo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>                                               
+        </header>
+        <main class="contenido-ppal">
+            <section class="secciones">
+                <article class="articulos">
+                    <h2>articulos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
+                </article>
+            </section>
+            <section class="secciones">
+                <article class="articulos">
+                    <h2>articulos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>articulos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>articulos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>articulos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>articulos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>articulos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>articulos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>articulos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>articulos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
+                </article>
+            </section>
+        </main>
+        <aside class="aside">
+            <h2>ASIDE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sapiente possimus animi consequatur tempore dolores voluptates soluta. Quas voluptas, ad debitis quaerat quam nulla animi commodi id, quisquam error hic?</p>
+            <!-- La infobar en el aside tendria display:none hasta resoluciones inferiores a 992px -->
+            <div class="infobar-aside">
+                <div class="item1">
+                    <img src="img/direccion.svg" alt="Icon Dirección" class="item-icon1">
+                    <span class="direccion">Florida 325</span>
+                </div>
+                <div class="item2">
+                    <img src="img/telefono.svg" alt="Icon Teléfono" class="item-icon2">
+                    <span class="telefono">4581-8538</span>
+                </div>
+                <div class="item3">
+                    <img src="img/whatsapp.svg" alt="Icon Whatsapp" class="item-icon3">
+                    <span class="whatsapp">11 4805-7548</span>
+                </div>
+                <div class="item4">
+                    <img src="img/horario.svg" alt="Icon Horario" class="item-icon4">
+                    <span class="horario">Lun a Vie:8 a 20hs. y Sab:9 a 12hs.</span>
+                </div>
+            </div>
+        </aside>
+        <footer class="pie">
+                <div class="logo-footer">
+                    <a href="index.html">
+                    <img src="img/LOGO-PRUEBA.png" alt="Logo TPO">
+                    </a>
+                </div>
+                <div class="info-footer">
+                        <!-- Acá irían por ejemplo redes sociales, direccón de sucursales,etc.. (con iconos) --> 
+                    <div>
+                        <h5>SUCURSAL C.A.B.A</h5>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Sede Central</p>
+                        <p>FLORIDA 325, CABA.</p>
+                        <p>CP C1199ABB </p>
+                        <P>Tel. 4581-8538</P>
+                        <p>Cel. (+54 11) 4805 7548</p>
+                    </div>
+                </div>
+                <div class="info-footer2">
+                        <!-- Acá irían por ejemplo datos relevantes de la empresa, como pueden ser el mail, telefono, numero de interno, direcciones, fax, zipcode, terminos y condiciones, legales, defensa al consumidor, etc... (sin iconos?) -->
+                    <div>
+                        <h5>SUCURSAL RAMOS MEJÍA</h5>
+                    </div> 
+                    <br>
+                    <div>
+                        <p>Sede segunda</p>  
+                        <p>Avenida de Mayo 2212</p>
+                        <p>CP ********</p>
+                        <p>Tel. 4623-6280</p>
+                        <p>Cel. (+54 11) 9350 5463</p>              
+                    </div>
+                </div>
+                <div class="legales-footer">
+                    <h5>LEGALES</h5>
+                    <br>
+                    <p><a href="#" class="linkFooter" analytics="" action="footer-terminos-condiciones" category="home" label="footer terminos y cond">Términos y condiciones de uso</a></p>
+                    <p><a href="#" class="linkFooter" analytics="" action="footer-politica" category="home" label="Footer politica de privacidad">Política de privacidad</a></p>
+                    <p><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa de las y los Consumidores. <br><strong style="font-size: 0.7rem">(Para reclamos ingrese aquí)</strong></a></p>
+                    <br>
+                    <small>Derechos reservados @2022</small>
+                </div>
+        </footer>
+    </div> 
+</body>
+</html>
