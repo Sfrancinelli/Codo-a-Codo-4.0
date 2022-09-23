@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="TPO.css">
+    <link rel="stylesheet" href="TPOv2.css">
     <script src="https://kit.fontawesome.com/a6123d0355.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Lato">
     <title>TPO</title>
@@ -37,6 +37,9 @@
                         </nav>
                     </div>
                 </div>
+                <div class="top-navbar-responsive">
+                    <h1>Centro Médico "Codo a Codo"</h1>
+                </div>
                 <div class="top-navbar">
                     <div class="item1">
                         <img src="img/direccion.svg" alt="Icon Dirección" class="item-icon1">
@@ -56,10 +59,34 @@
                     </div>
                 </div>
                 <div class="flex-log-icon">
-                     <div class="log-in">
-                    <!-- Aca boton de log in arriba a la derecha? -->
-                        <a target="_blank" rel="noopener noreferrer" href="#" class="boton-log">Log in</a>
-                    </div>  
+                     <div class="log-in" onclick="document.getElementById('logear').style.display='block'">
+                        <a rel="noopener noreferrer" href="#" class="boton-log">Log in</a>
+                    </div>
+                    <div id="logear" class="modal">
+                         <form class="modal-contenido animate" action="#" method="post">
+                          <div class="container">
+                            <label for="usuario"><b>Usuario</b></label>
+                            <input type="text" placeholder="Introduzca su usuario..." name="usuario" required>                      
+                            <label for="contra"><b>Contraseña</b></label>
+                            <input type="password" placeholder="Introduzca su contraseña..." name="contra" required>                              
+                            <button type="submit">Login</button>
+                            <label>
+                              <input type="checkbox" checked="checked" name="recordar"> Recordarme
+                            </label>
+                          </div>                      
+                          <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('logear').style.display='none'" class="cancelarbtn">Cancelar</button>
+                          </div>
+                        </form>
+                    </div> 
+                    <script>
+                        var modal = document.getElementById('logear'); 
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>                          
                     <div class="icons-nav">
                         <a class="redsoc" href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                         <a class="redsoc" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
