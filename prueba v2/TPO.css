@@ -199,6 +199,7 @@ body {
     padding: 0.25rem 1rem 0.25rem 1rem;
     width: 9rem;
     border-radius: 10px;
+    box-shadow: 0.1px 0.1px 3px black;
     background: linear-gradient(96deg, rgb(61, 204, 233) 0%, rgb(135, 232, 252) 100%);
     /* transition: all 2s ease-in-out; */
     transition-property: all;
@@ -215,6 +216,10 @@ body {
     align-self: center;
 }
 
+.icons-nav a {
+    color: #00A9B0;
+}
+
 .icons-nav a:hover {
     color:rgb(61, 204, 233);
 }
@@ -227,6 +232,7 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 5px;
   }
   
   button {
@@ -237,6 +243,7 @@ input[type=text], input[type=password] {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 5px;
   }
   
   button:hover {
@@ -247,11 +254,14 @@ input[type=text], input[type=password] {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
-  }
+    border-radius: 5px;
+}
 
   .container {
     padding: 10px;
     text-align: center;
+    border-radius: 10px;
+    /* background-color:#e4e1e1; */
   }
   
   .modal {
@@ -269,9 +279,10 @@ input[type=text], input[type=password] {
   }
   
   .modal-contenido {
-    background-color: #fefefe;
+    background-color:#F2F2F2;
     margin: 5% auto 15% auto; 
     border: 1px solid #888;
+    border-radius: 10px;
     width: 70%;
   }
   
