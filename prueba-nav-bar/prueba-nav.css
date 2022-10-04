@@ -543,6 +543,10 @@ input[type=text], input[type=password] {
         color: #00A9B0;
     }
 
+    .icons-nav-832 div a:hover {
+        color:rgb(61, 204, 233);
+    } 
+
     .top-navbar-responsive {
         width: auto;
         margin-top: 13px;
@@ -594,6 +598,7 @@ input[type=text], input[type=password] {
         grid-row: 2 / 3;
         position: relative;
         overflow: visible;
+        z-index: 2;
     }
 
     .ham {
@@ -604,6 +609,7 @@ input[type=text], input[type=password] {
         display: block;
         border-radius: 100vh;
         position: relative;
+        transition: all ease-in-out 500ms;
     }
 
     .ham::after,
@@ -616,37 +622,24 @@ input[type=text], input[type=password] {
         border-radius: 100vh;
         margin-top: 5px;
         position: absolute;
+        transition: all ease-in-out 500ms
     }
 
     .ham::before {
         transform: translateY(-10px);
     }
 
-    .abrir .ham {
+    .open {
         transform: rotate(45deg);
     }
 
-/*
-    .flex {
-        display: flex;
-        gap: var(--gap, 1rem);
-        flex-direction: column;
+    .open::before {
+        opacity:0;
     }
-*/
-    /*
-    .p-n {
-        flex-direction: column;
-        position: fixed;
-        inset: 12% 2.5% 5% 55%; 
-        background:#F2F2F2;
-        list-style: none;
-        padding:0;
-        margin:0;
+
+    .open::after {
+        transform: rotate(90deg) translateX(-5px);
     }
-    .p-n a {
-        text-decoration: none;
-    }
-    */
 
     .p-n {
         position: absolute;
@@ -656,6 +649,7 @@ input[type=text], input[type=password] {
         z-index: 2;
         height: 0;
         overflow: hidden;
+        font-size: .9em;
     }
 
     .p-n--abrir {
@@ -689,6 +683,7 @@ input[type=text], input[type=password] {
         background: #E4B363;
         color: #464655;
     }
+
  }
 
 @media screen and (max-width: 762px) {
