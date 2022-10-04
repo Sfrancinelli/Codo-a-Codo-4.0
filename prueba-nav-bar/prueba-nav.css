@@ -17,7 +17,8 @@
     "header header header header"
     "main main main aside"
     "main main main aside"
-    "footer footer footer footer";   
+    "footer footer footer footer";
+    overflow: visible;   
 }
 
 /* Parámetros generales */
@@ -57,7 +58,6 @@ body {
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    overflow: auto;
 }
 
 /* ITEMS HEADER (FLEX) */
@@ -99,8 +99,7 @@ body {
     margin-left: 1rem;
     font-size: 1.1vw;
     grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    
+    grid-row: 1 / 2;    
 }
 
 .top-navbar > div {
@@ -168,6 +167,10 @@ body {
 .nav-bar li a:hover {
     color: white;
     background: linear-gradient(96deg, rgb(61, 204, 233) 0%, #00FFC6 100%);
+}
+
+.hamburguesa {
+    display: none;
 }
 
 /* PADRE FLEX LOG IN + ICONS */
@@ -341,7 +344,6 @@ input[type=text], input[type=password] {
     box-shadow: 0 0 0.5rem rgb(83,78,76);
     font-family:Helvetica, Arial, sans-serif;
     font-size: 1.8vh;
-
     display: grid;
     row-gap: 5px;
     column-gap: 1rem;
@@ -487,7 +489,7 @@ input[type=text], input[type=password] {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         text-align: center;
         border-radius: 4px;
         width: 100%;
@@ -510,14 +512,16 @@ input[type=text], input[type=password] {
         grid-template-rows: 1fr;
         justify-items: center;
         align-items: center;
-        overflow: auto;
+        overflow: visible;
     }
 
     .resto-header {
         margin: 0 0 15px 10px;
         padding: 0;
         width: auto;
+        overflow:visible;
     }
+
     .icons-nav-832{
         display: flex;
         flex-direction: column;
@@ -525,6 +529,7 @@ input[type=text], input[type=password] {
         align-items: stretch;
         font-size: 1em;
     }
+
     .icons-nav-832 div {
         display: flex;
         flex-direction: row;
@@ -532,14 +537,17 @@ input[type=text], input[type=password] {
         align-items: flex-end;
         gap: 5px;
     }
+
     .icons-nav-832 div a {
         font-size: 1.8em;
         color: #00A9B0;
     }
+
     .top-navbar-responsive {
         width: auto;
         margin-top: 13px;
     }
+
     .top-navbar-responsive h1 {
         font-style: 700;
         background-color: transparent;
@@ -552,22 +560,28 @@ input[type=text], input[type=password] {
         background: linear-gradient(96deg, rgb(61, 204, 233) 0%, #00FFC6 100%); */
         font-size: 2em;
     }
+
     .nav-bar {
         display: none;
     }
+
     .flex-log-icon {
         width: 100%;
         margin: 1.5rem 1rem 0 0;
         grid-column: 4 / 5;
         grid-row: 1 / 2;
     }
+
     .log-in {
         font-size: 2.2vw;
         padding: 0;
+        margin-bottom: 10px;
     }
+
     .icons-nav {
         display: none;
     }
+
     .hamburguesa {
         display: flex;
         margin-right: 1rem;
@@ -578,7 +592,10 @@ input[type=text], input[type=password] {
         cursor: pointer;
         grid-column: 4 / 5;
         grid-row: 2 / 3;
+        position: relative;
+        overflow: visible;
     }
+
     .ham {
         margin-top: 1em;
         width: 25px;
@@ -588,6 +605,7 @@ input[type=text], input[type=password] {
         border-radius: 100vh;
         position: relative;
     }
+
     .ham::after,
     .ham::before {
         content: "";
@@ -599,20 +617,77 @@ input[type=text], input[type=password] {
         margin-top: 5px;
         position: absolute;
     }
-    .ham::before {
-        margin-bottom: 4px;
-        top:-10px;
 
+    .ham::before {
+        transform: translateY(-10px);
     }
+
+    .abrir .ham {
+        transform: rotate(45deg);
+    }
+
+/*
+    .flex {
+        display: flex;
+        gap: var(--gap, 1rem);
+        flex-direction: column;
+    }
+*/
     /*
     .p-n {
+        flex-direction: column;
         position: fixed;
-        inset: 0 0 0 25%; 
-        background:steelblue;
+        inset: 12% 2.5% 5% 55%; 
+        background:#F2F2F2;
+        list-style: none;
+        padding:0;
+        margin:0;
+    }
+    .p-n a {
+        text-decoration: none;
     }
     */
-    .hamburguesa nav {
-        display: none;
+
+    .p-n {
+        position: absolute;
+        background: #464655;
+        top:100%;
+        right: -73%;
+        z-index: 2;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .p-n--abrir {
+        height: auto;
+    }
+
+    .p-n li {
+        list-style: none;
+        border-bottom: 1px solid #575766;
+    }
+
+    .p-n li:last-child {
+        border-bottom: none;
+    }
+
+    .p-n ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .p-n a {
+        color: #EBEBD3;
+        text-decoration: none;
+        display: block;
+        padding: 1.5em 4em;
+    }
+
+    .p-n a:hover,
+    .p-n a:focus {
+        background: #E4B363;
+        color: #464655;
     }
  }
 
@@ -625,7 +700,7 @@ input[type=text], input[type=password] {
         grid-template-rows: 1fr;
         justify-items: center;
         align-items: center;
-        overflow: auto;
+        overflow: visible;
     }
 
     .log-in {
@@ -675,7 +750,7 @@ input[type=text], input[type=password] {
         grid-template-rows: 1fr;
         justify-items: center;
         align-items: center;
-        overflow: auto;
+        overflow: visible;
     }
 
     .log-in {
@@ -689,7 +764,7 @@ input[type=text], input[type=password] {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         text-align: center;
         border-radius: 4px;
         width: 100%;
