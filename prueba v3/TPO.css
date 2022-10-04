@@ -343,7 +343,7 @@ input[type=text], input[type=password] {
     grid-area: footer;
     box-shadow: 0 0 0.5rem rgb(83,78,76);
     font-family:Helvetica, Arial, sans-serif;
-    font-size: 1.8vh;
+    font-size: .8em;
     display: grid;
     row-gap: 5px;
     column-gap: 1rem;
@@ -464,7 +464,7 @@ input[type=text], input[type=password] {
     }
 
     .root .pie {
-        font-size: 1.5vh;
+        font-size: .9em;
     }
 
     .legales-footer strong {
@@ -494,7 +494,7 @@ input[type=text], input[type=password] {
         border-radius: 4px;
         width: 100%;
         height: auto;
-        font-size: 1.5vh;
+        font-size: .7em;
         grid-row: 1 / 2;   
     }
 
@@ -523,12 +523,17 @@ input[type=text], input[type=password] {
         overflow:visible;
     }
 
+    .infobar-aside {
+        font-size: .7em;
+    }
+
     .icons-nav-832{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
         font-size: 1em;
+        margin-right: 2em;
     }
 
     .icons-nav-832 div {
@@ -551,6 +556,7 @@ input[type=text], input[type=password] {
     .top-navbar-responsive {
         width: auto;
         margin-top: 13px;
+        margin-right: 1em;
     }
 
     .top-navbar-responsive h1 {
@@ -564,6 +570,7 @@ input[type=text], input[type=password] {
         padding: 5px;
         background: linear-gradient(96deg, rgb(61, 204, 233) 0%, #00FFC6 100%); */
         font-size: 2em;
+        margin-right: 1.5em;
     }
 
     .nav-bar {
@@ -687,6 +694,24 @@ input[type=text], input[type=password] {
         }
     }
 
+    @media (max-width: 450px) {
+        .p-n {
+            right: -59%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .p-n {
+            right: -57%;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .p-n {
+            right: -52%;
+        }
+    }
+
     .p-n--abrir {
         clip-path: circle(150% at top right);
     }
@@ -752,7 +777,7 @@ input[type=text], input[type=password] {
         justify-items: center;
         align-items: center;
         grid-template-areas: "icon info-footer info-footer2 legales-footer";
-        font-size: 1.4vh;      
+        font-size: .8em;      
     }
 
     .legales-footer strong {
@@ -760,7 +785,7 @@ input[type=text], input[type=password] {
     }
 
     .infobar-aside {
-        font-size: 1.4vh;
+        font-size: .7em;
     }
 }
    
@@ -773,14 +798,17 @@ input[type=text], input[type=password] {
 	}
 
     .root .encabezado {     
-        display: grid;
-        row-gap: 5px;
-        column-gap: 5px;
         grid-template-columns: 2fr 5fr 3fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
-        align-items: center;
-        overflow: visible;
+    }
+
+    .top-navbar-responsive h1 {
+        font-size: 2.3em;
+        margin-right: 1.5em;
+        margin-left: .5em;
+    }
+
+    .icons-nav-832 {
+        font-size: 1.4em;
     }
 
     .log-in {
@@ -799,16 +827,80 @@ input[type=text], input[type=password] {
         border-radius: 4px;
         width: 100%;
         height: auto;
-        font-size: 1.5vh;
+        font-size: .8em;
         grid-row: 1 / 2;   
-    }
-
-    .root .pie {
-        font-size: 1.5vh;
     }
 
     .legales-footer strong {
         font-size: 0.9vh;
+    }
+}
+
+@media screen and (max-width: 622px){
+    .root .encabezado {     
+        row-gap: 0px;
+        column-gap: 0px;
+        grid-template-columns: 2fr 4fr 4fr;
+    } 
+
+    .top-navbar-responsive h1 {
+        font-size: 2.5em;
+        margin-right: 1.5em;
+        margin-left: .5em;
+    }
+
+    .icons-nav-832 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 562px){
+    .root .encabezado {     
+        row-gap: 0px;
+        column-gap: 0px;
+        grid-template-columns: 2fr 4fr 4fr;
+    } 
+
+    .top-navbar-responsive h1 {
+        font-size: 2.5em;
+        margin-right: 1.5em;
+    }
+
+    .icons-nav-832 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .top-navbar-responsive h1 {
+        font-size: 2.2em;
+        margin-right: 1.2em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .root .encabezado {     
+        grid-template-columns: 2fr 5fr 4fr;
+    } 
+
+    .top-navbar-responsive h1 {
+        font-size: 2.4em;
+        margin-right: 1.2em;
+    }
+
+    .icons-nav-832 {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 462px){
+    .root .encabezado {     
+        grid-template-columns: 2fr 5fr 4fr;
+    } 
+
+    .top-navbar-responsive h1 {
+        font-size: 2.4em;
+        margin-right: 1.2em;
     }
 }
 
