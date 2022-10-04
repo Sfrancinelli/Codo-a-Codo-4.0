@@ -643,13 +643,15 @@ input[type=text], input[type=password] {
 
     .p-n {
         position: absolute;
-        background: #464655;
+        background: #6f6f81;
         top:100%;
         right: -73%;
         z-index: 2;
         height: 0;
         overflow: hidden;
         font-size: .9em;
+        border-radius: 15px 0 15px 15px;
+        text-align: center;
     }
 
     .p-n--abrir {
@@ -675,13 +677,13 @@ input[type=text], input[type=password] {
         color: #EBEBD3;
         text-decoration: none;
         display: block;
-        padding: 1.5em 4em;
+        padding: 1.5em 3em;
     }
 
     .p-n a:hover,
     .p-n a:focus {
-        background: #E4B363;
-        color: #464655;
+        background: rgb(111, 220, 241);
+        color: #27272b;
     }
 
  }
