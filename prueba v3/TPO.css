@@ -275,7 +275,7 @@ input[type=text], input[type=password] {
   .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
@@ -656,7 +656,6 @@ input[type=text], input[type=password] {
         background: #6f6f81;
         top:100%;
         right: -73%;
-        z-index: 2;
         font-size: .9em;
         border-radius: 15px 0 15px 15px;
         text-align: center;
