@@ -315,6 +315,15 @@ button:hover {
 .root .contenido-ppal {
     grid-area: main;
     box-shadow: 0 0 0.5rem rgb(83,78,76);
+    min-height: 400px;
+}
+
+.root .contenido-ppal1 {
+    grid-area: main;
+    box-shadow: 0 0 0.5rem rgb(83,78,76);
+    min-height: 400px;
+    
+    
 }
 
 /* SIDEBAR */
