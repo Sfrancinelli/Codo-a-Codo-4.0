@@ -15,8 +15,8 @@
 	grid-template-rows: repeat(4, auto);
     grid-template-areas: 
     "header header header header"
-    "main main main aside"
-    "main main main aside"
+    "aside main main main"
+    "aside main main main"
     "footer footer footer footer";
     overflow: visible;   
 }
@@ -161,7 +161,7 @@ body {
     transition: all 600ms ease-in-out;
 }
 
-.nav-bar li a:hover {
+.nav-bar li a:hover, .nav-bar li a:focus {
     color: white;
     background: linear-gradient(96deg, rgb(61, 204, 233) 0%, #00FFC6 100%);
 }
@@ -206,7 +206,7 @@ body {
     transition-timing-function: ease-in-out;
 }
 
-.log-in a:hover {
+.log-in a:hover, .log-in a:focus {
     color: rgb(53, 48, 48);
     background: linear-gradient(96deg, rgb(61, 204, 233) 0%, #D2ED54 100%);
 }
@@ -219,7 +219,7 @@ body {
     color: #00A9B0;
 }
 
-.icons-nav a:hover {
+.icons-nav a:hover, .icons-nav a:focus {
     color:rgb(61, 204, 233);
 }
 
@@ -250,7 +250,7 @@ button {
     border-radius: 5px;
 }
   
-button:hover {
+button:hover, button:focus {
     opacity: 0.8;
 }
   
@@ -398,7 +398,7 @@ button:hover {
     color: #323436;
 }
 
-.legales-footer a:hover {
+.legales-footer a:hover, .legales-footer a:focus {
     color: white;
 }
 
@@ -500,7 +500,8 @@ button:hover {
         width: 100%;
         height: auto;
         font-size: .7em;
-        grid-row: 1 / 2;   
+        grid-row: 1 / 2; 
+        align-self: flex-start;  
     }
    
     .item-icon4 {
@@ -566,7 +567,7 @@ button:hover {
         color: #00A9B0;
     }
 
-    .icons-nav-832 div a:hover {
+    .icons-nav-832 div a:hover, .icons-nav-832 a:focus {
         color:rgb(61, 204, 233);
     } 
 
@@ -724,6 +725,12 @@ button:hover {
     @media (max-width: 360px) {
         .p-n {
             right: -52%;
+        }
+    }
+
+    @media (max-width: 345px) {
+        .p-n {
+            right: -40%;
         }
     }
 
