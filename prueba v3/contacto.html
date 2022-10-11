@@ -15,11 +15,14 @@
     <style>
         .contenido-ppal {
             height: auto;
-            overflow: auto;
+            overflow: visible;
+            color: #f2f2f2;
+            fill: currentColor;
         }
 
         .icon-contacto {
-            width: 1em;
+            width: 3vw;
+            margin-right:1em;
         }
 
         .conteiner-contacto {
@@ -29,6 +32,7 @@
             position: relative;
             padding: 0 .5% 0 .5%;
             gap: 5px;
+            height: 100%;
         }
 
         .titulo-contacto {
@@ -90,6 +94,7 @@
             height: 100%;
             box-sizing: border-box;
             text-align: center;
+            align-items: center;
         }
 
         .conteiner-listas {
@@ -97,14 +102,16 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            height: 90%;
+            height: 100%;
             box-sizing: border-box;
             align-items: flex-start;
             background: linear-gradient(96deg, #00A9B0 0%, rgb(135, 232, 252) 100%);
             font-family: Lato;
             font-size: 1vw;
             color: white;
-            border-radius: 10%;
+            border-radius: 10px;
+            padding-right: 5px;
+            justify-content: space-evenly;
         }
 
         .texto-contacto {
@@ -123,7 +130,7 @@
             flex-direction: column;
             justify-content: space-around;
             width: 95%;
-            height: 60%;
+            height: 100%;
             box-sizing: border-box;
         }
 
@@ -139,24 +146,90 @@
             font-family: Lato;
             font-size: 1.2rem;
             font-weight: 700;
+            margin-right: auto; 
+        }
+
+        .padre-items-contacto h4 {
+            border-bottom: 1px solid #f2f2f2;
         }
 
         .items-contacto {
             list-style: none;
-            margin-left: 20%;
+            margin-left: auto;
             margin-bottom: 0.8vmin;
             margin-top: 0.8vmin;
             font-size: 1rem;
+            margin-right:auto;
+        }
+ 
+        input {
+            color: rgba(0, 0, 0, 0.87);
+            cursor: text;
+            display: inline-flex;
+            position: relative;
+            font-size: 1rem;
+            box-sizing: border-box;
+            align-items: center;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1.1876em;
+            letter-spacing: 0.00938em;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            flex-direction: column-reverse;
+        }
+
+        #button-contacto {
+            width:25%;
+            align-self: center;
+            background-color: #00A9B0
         }
 
         @media (max-width: 850px) {
+            .titulo-contacto {
+                font-size: 1.5em;
+                height: 7.5%;
+            }
+
+            .titulo-contacto::after {
+                width: 10vw;
+                height: 1vw;
+            }
+
             .conteiner-form-aside{
                 flex-direction: column;
                 -webkit-box-align: center;
                 align-items: center;
                 height: 95%;
             }
-        }   
+
+            .conteiner-form-texto {
+                width: 100%;
+                padding-bottom: 5px;
+            }
+
+            .derecha-contacto {
+                width: 70%;
+            }
+
+            .texto-contacto p {
+                font-size: 1.5vw;
+            }
+
+            .items-contacto {
+                padding: 3px;
+            }
+
+            .items-contacto:last-child {
+                margin-bottom: 7px;
+            }
+        }  
+
+        @media (max-width: 567px) {
+            .texto-contacto p {
+                font-size: 2vw;
+            } 
+        }
     </style>
 </head>
 <body>
@@ -181,37 +254,37 @@
                                 </p>          
                             </div>
                             <form action="" class="form-contacto">
-                                <input for="nombre" id="input_nombre" class="input-form" placeholder="Introduzca su nombre*"></input>
-                                <input for="apellido" id="input_apellido" class="input-form" placeholder="Introduzca su apellido*"></input>
-                                <input for="DNI" id="input_DNI" class="input-form" placeholder="Introduzca su DNI*"></input>
-                                <input for="celular" id="input_celular" class="input-form" placeholder="Introduzca su celular*"></input>
-                                <input for="email" id="input_email" class="input-form" placeholder="Introduzca su email*"></input>
-                                <input for="pregunta" id="input_pregunta" class="input-form" placeholder="Introduzca su consulta..."></input>
+                                <input for="nombre" id="input_nombre" class="input-form" placeholder="Nombre*"></input>
+                                <input for="apellido" id="input_apellido" class="input-form" placeholder="Apellido*"></input>
+                                <input for="DNI" id="input_DNI" class="input-form" placeholder="DNI*"></input>
+                                <input for="celular" id="input_celular" class="input-form" placeholder="Celular*"></input>
+                                <input for="email" id="input_email" class="input-form" placeholder="Email*"></input>
+                                <input for="pregunta" id="input_pregunta" class="input-form" placeholder="Consulta..."></input>
                                 <button class="button-contacto" id="button-contacto">Enviar</button>
                             </form>
                         </div>
                         <div class="derecha-contacto">
                             <div class="conteiner-listas">
                                 <ul class="padre-items-contacto">
-                                    <svg class="icon-contacto" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg> DIRECCIÓN 
+                                    <svg class="icon-contacto" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg> <h4>DIRECCIÓN </h4>
                                 </ul>
                                 <div class="detalle-contacto2"></div>
-                                    <li class="items-contacto">Av. España 82 - TANDIL</li>
-                                    <li class="items-contacto">Alte. Brown 108 - B. JUAREZ</li>
+                                    <li class="items-contacto">Av. Florida 325 - CABA</li>
+                                    <li class="items-contacto">Av. de Mayo - Ramos Mejía</li>
                                 <ul class="padre-items-contacto">
-                                    <svg class="icon-contacto" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"></path></svg> TELÉFONOS 
+                                    <svg class="icon-contacto" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"></path></svg> <h4>TELÉFONOS</h4>
                                 </ul>
                                 <div class="detalle-contacto2"></div>
-                                    <li class="items-contacto">0249 - 4440129</li>
-                                    <li class="items-contacto">0249 - 4446762</li>
-                                    <li class="items-contacto">02292 - 453793</li>
-                                    <li class="items-contacto">0800 - 666 - 2343</li>
-                                    <li class="items-contacto">FAX: 0249 - 4440129</li>
+                                    <li class="items-contacto">0249 - 1645127</li>
+                                    <li class="items-contacto">0249 - 4466752</li>
+                                    <li class="items-contacto">02292 - 823397</li>
+                                    <li class="items-contacto">0800 - 666 - 1379</li>
+                                    <li class="items-contacto">FAX: 0249 - 1645127</li>
                                 <ul class="padre-items-contacto">
-                                    <svg class="icon-contacto" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg> CORREO 
+                                    <svg class="icon-contacto" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg> <h4>CORREO</h4> 
                                 </ul>
                                 <div class="detalle-contacto2"></div>
-                                    <li class="items-contacto">cdm@centrodm.com.ar</li>
+                                    <li class="items-contacto">CM-CaC@gmail.com</li>
                             </div>    
                         </div>
                     </div>
