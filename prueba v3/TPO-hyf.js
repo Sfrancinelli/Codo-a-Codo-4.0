@@ -1,6 +1,4 @@
 document.getElementById("encabezado").innerHTML = `
-<header class="encabezado">
-
 <div class="logo-container">
     <a class="logo" href="index.html">
         <img src="img/LOGO-PRUEBA.png" alt="Logo TPO">
