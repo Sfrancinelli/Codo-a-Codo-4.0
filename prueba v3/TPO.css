@@ -491,7 +491,8 @@ button:hover {
         width: 100%;
         height: auto;
         font-size: .7em;
-        grid-row: 1 / 2;   
+        grid-row: 1 / 2; 
+        align-self: flex-start;  
     }
    
     .item-icon4 {
@@ -715,6 +716,12 @@ button:hover {
     @media (max-width: 360px) {
         .p-n {
             right: -52%;
+        }
+    }
+
+    @media (max-width: 345px) {
+        .p-n {
+            right: -40%;
         }
     }
 
