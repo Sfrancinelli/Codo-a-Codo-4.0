@@ -13,6 +13,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <script src="responsive-nav-bar.js"></script>
     <style>
+        .root {
+            display: grid;
+            width: 95%;
+            max-width: 2000px;
+            margin: 20px auto;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas: 
+            "header header header header"
+            "main main main main"
+            "main main main main"
+            "footer footer footer footer";
+            overflow: visible;
+        }
+        
+        .root .aside {
+            display:none;
+        }
+
         .contenido-ppal {
             height: auto;
             overflow: visible;
@@ -177,6 +197,14 @@
             justify-content: space-evenly;
             flex-wrap: nowrap;
             flex-direction: column-reverse;
+            height: 10%;
+            padding: 5px;
+        }
+
+        .form-contacto textarea {
+            height:20%;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            padding: 5px;
         }
 
         #button-contacto {
@@ -254,12 +282,12 @@
                                 </p>          
                             </div>
                             <form action="" class="form-contacto">
-                                <input for="nombre" id="input_nombre" class="input-form" placeholder="Nombre*"></input>
-                                <input for="apellido" id="input_apellido" class="input-form" placeholder="Apellido*"></input>
-                                <input for="DNI" id="input_DNI" class="input-form" placeholder="DNI*"></input>
-                                <input for="celular" id="input_celular" class="input-form" placeholder="Celular*"></input>
-                                <input for="email" id="input_email" class="input-form" placeholder="Email*"></input>
-                                <input for="pregunta" id="input_pregunta" class="input-form" placeholder="Consulta..."></input>
+                                <input for="nombre" id="input_nombre" class="input-form" placeholder="Nombre*" required></input>
+                                <input for="apellido" id="input_apellido" class="input-form" placeholder="Apellido*" required></input>
+                                <input for="DNI" id="input_DNI" class="input-form" placeholder="DNI*" required></input>
+                                <input for="celular" id="input_celular" class="input-form" placeholder="Celular*" required></input>
+                                <input for="email" id="input_email" class="input-form" placeholder="Email*" required></input>
+                                <textarea for="consulta" id="input_consulta" class="input-form" placeholder="Consulta"></textarea>
                                 <button class="button-contacto" id="button-contacto">Enviar</button>
                             </form>
                         </div>
