@@ -29,8 +29,6 @@
             flex: 1 1 auto;
             align-items: stretch;
             justify-content: center;
-            margin-top: 5vh;
-            margin-bottom: 5vh;
         }
 
         .conteiner-insti {
@@ -75,7 +73,118 @@
             color: rgb(32, 32, 32);
             line-height: 1.5;
         }
-            
+
+        .seccion-insti-info {
+            height: 450px;
+            width: 100%;
+            display: flex;
+            flex: 1 1 auto;
+            -webkit-box-align: stretch;
+            align-items: stretch;
+            -webkit-box-pack: center;
+            justify-content: center;
+            margin-top: 2vh;
+            margin-bottom: 4vh;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 850px) {
+            .seccion-insti-info {
+                height: 190vh;
+            }
+        }
+
+
+        .conteiner-insti-info {
+            position: relative;
+            display: flex;
+            flex: 1 1 auto;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: border-box;
+            background: linear-gradient(253deg, rgb(255, 254, 254) 0%, rgb(249, 249, 249) 100%);
+            border-radius: 10px;
+        }
+         
+        .segundoconteiner-info {
+            position: relative;
+            display: flex;
+            width: 50%;
+            min-height: 25%;
+            box-sizing: border-box;
+        }
+
+        .icons-info {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            width: 10%;
+            height: auto;
+        }
+
+        
+        .texto-info {
+            position: absolute;
+            top: 15%;
+            left: 22.5%;
+            width: 75%;
+            max-height: 85%;
+            color: rgb(122, 122, 122);
+            text-align: left;
+            font-family: Lato;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 850px) {
+            .seccion-insti-info {
+                height: 190vh;
+            }
+
+            .segundoconteiner-info {
+                width: 100%;
+                min-height: 13%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .conteiner-insti-info {
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+
+            .icons-info {
+            position: absolute;
+            top: 20%;
+            left: 2%;
+            width: 8%;
+            height: auto;
+            }
+
+            .titulo-insti {
+            font-size: 1.5rem;
+            }
+
+            .texto-info {
+            font-size: .6rem;
+            position: relative;
+            display: flex;
+            font-size: .7rem;
+            text-align: center;
+            top: 0px;
+            left: 0px;
+            margin-top: 1rem;
+            }
+
+
+    }
+    
     </style>
 
 </head>
@@ -109,46 +218,46 @@
             </section>
 
             <section class="seccion-insti-info">
-                <div class="sc-pcJja jjDvpo">
-                    <div class="sc-pliRl hJMUmJ">
-                        <img src="/uploads/40a246a6-27ba-4336-94b6-c4163607e8f6.svg" alt="Política 0" class="sc-ptDSg eYGQDi">
-                        <div class="sc-qPwPv cNRduO">
+                <div class="conteiner-insti-info">
+                    <div class="segundoconteiner-info">
+                        <img src="img/svg1.svg" alt="Política 0" class="icons-info">
+                        <div class="texto-info">
                             <p>Cumplir con los requisitos de la norma ISO 9001 en su versión vigente en pos de la mejora continua.</p>
                         </div>
                     </div>
-                    <div class="sc-pliRl hJMUmJ">
-                        <img src="/uploads/1d5aaa06-2f21-4812-b329-fbc35f5ec79d.svg" alt="Política 1" class="sc-ptDSg eYGQDi">
-                        <div class="sc-qPwPv cNRduO">
+                    <div class="segundoconteiner-info">
+                        <img src="img/svg2.svg" alt="Política 1" class="icons-info">
+                        <div class="texto-info">
                             <p>Otorgar a los pacientes una atención rápida, eficaz, cuidada y responsable.</p>
                         </div>
                     </div>
-                    <div class="sc-pliRl hJMUmJ">
-                        <img src="/uploads/e15281fc-73a4-42f6-a4fd-83d932cc2993.svg" alt="Política 2" class="sc-ptDSg eYGQDi">
-                        <div class="sc-qPwPv cNRduO">
+                    <div class="segundoconteiner-info">
+                        <img src="img/svg3.svg" alt="Política 2" class="icons-info">
+                        <div class="texto-info">
                             <p>Ofrecer seriedad y precisión en los diagnósticos.</p>
                         </div>
                     </div>
-                    <div class="sc-pliRl hJMUmJ">
-                        <img src="/uploads/3852759f-cd06-4674-8e5e-06eb9305813f.svg" alt="Política 3" class="sc-ptDSg eYGQDi">
-                        <div class="sc-qPwPv cNRduO">
+                    <div class="segundoconteiner-info">
+                        <img src="img/svg4.svg" alt="Política 3" class="icons-info">
+                        <div class="texto-info">
                             <p>Invertir en los últimos adelantos tecnológicos y científicos del área de diagnóstico por imágenes.</p>
                         </div>
                     </div>
-                    <div class="sc-pliRl hJMUmJ">
-                        <img src="/uploads/408b828b-5326-4d63-82ac-17a183cbd018.svg" alt="Política 4" class="sc-ptDSg eYGQDi">
-                        <div class="sc-qPwPv cNRduO">
+                    <div class="segundoconteiner-info">
+                        <img src="img/svg5.svg" alt="Política 4" class="icons-info">
+                        <div class="texto-info">
                             <p>Promocionar campañas de prevención u otras herramientas que impliquen una mejora en la calidad de vida de nuestros pacientes.</p>
                         </div>
                     </div>
-                    <div class="sc-pliRl hJMUmJ">
-                        <img src="/uploads/02d60e37-8d2f-4306-ae80-cccd2f3640db.svg" alt="Política 5" class="sc-ptDSg eYGQDi">
-                        <div class="sc-qPwPv cNRduO">
+                    <div class="segundoconteiner-info"icons-info>
+                        <img src="img/svg6.svg" alt="Política 5" class="icons-info">
+                        <div class="texto-info">
                             <p>Impulsar el desarrollo y capacitación constante de nuestro personal, promoviendo el compromiso con los pacientes, la institución y el medio.</p>
                         </div>
                     </div>
-                    <div class="sc-pliRl hJMUmJ">
-                        <img src="/uploads/9e7f2aaa-5cda-4e7c-9ce9-724e84c0934b.svg" alt="Política 6" class="sc-ptDSg eYGQDi">
-                        <div class="sc-qPwPv cNRduO">
+                    <div class="segundoconteiner-info"icons-info>
+                        <img src="img/svg7.svg" alt="Política 6" class="icons-info">
+                        <div class="texto-info">
                             <p>Promoverlas relaciones inter-institucionales u otras iniciativas a fin de ampliar el alcance de nuestros servicios y propiciar el desarrollo.</p>
                         </div>
                     </div>
