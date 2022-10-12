@@ -217,6 +217,12 @@
             background-color: #00A9B0
         }
 
+        .msg_error {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color: red;
+        }
+
         @media (max-width: 850px) {
             .titulo-contacto {
                 height: 7.5%;
@@ -288,7 +294,7 @@
                                     Ante cualquier duda o consulta, puede utilizar el formulario de contacto que se encuentra a continuación. Si su consulta requiere respuesta inmediata, le solicitamos que visite nuestro centro médico o se comunique telefónicamente.
                                 </p>          
                             </div>
-                            <form action="" class="form-contacto">
+                            <form action="" class="form-contacto" id="formulario">
                                 <input for="nombre" id="input_nombre" class="input-form" placeholder="Nombre*" required></input>
                                 <input for="apellido" id="input_apellido" class="input-form" placeholder="Apellido*" required></input>
                                 <input for="DNI" id="input_DNI" class="input-form" placeholder="DNI*" required></input>
@@ -297,6 +303,7 @@
                                 <textarea for="consulta" id="input_consulta" class="input-form" placeholder="Consulta"></textarea>
                                 <button class="button-contacto" id="button-contacto">Enviar</button>
                             </form>
+                            <div class="msg_error"></div>
                         </div>
                         <div class="derecha-contacto">
                             <div class="conteiner-listas">
