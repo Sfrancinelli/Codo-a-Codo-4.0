@@ -112,10 +112,16 @@ body {
     width: 1.2vw;
 }
 
+.top-navbar a {
+    text-decoration: none;
+    color: #323436;
+}
+
 /* TOP NAVBAR RESOLUCIONES MENORES A 992px */
 .top-navbar-responsive {
     display: none;
 }
+
 
 /* PADRE NAVBAR */
 .resto-header {
@@ -493,6 +499,11 @@ button:hover, button:focus {
         font-size: .7em;
         grid-row: 1 / 2; 
         align-self: flex-start;  
+    }
+
+    .infobar-aside a {
+        text-decoration: none;
+        color: #323436;
     }
    
     .item-icon4 {

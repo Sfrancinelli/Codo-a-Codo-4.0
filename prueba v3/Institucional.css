@@ -111,6 +111,11 @@ body {
     width: 1.2vw;
 }
 
+.top-navbar a {
+    text-decoration: none;
+    color: #323436;
+}
+
 /* TOP NAVBAR RESOLUCIONES MENORES A 992px */
 .top-navbar-responsive {
     display: none;
@@ -522,6 +527,11 @@ button:hover, button:focus {
             font-size: .8em;
             grid-row: 1 / 2;
     } 
+
+    .infobar-aside a {
+        text-decoration: none;
+        color: #323436;
+    }
 
     .item1, .item2, .item3, .item4 {
         align-self: baseline;

@@ -46,7 +46,7 @@ document.getElementById("encabezado").innerHTML = `
     <div class="top-navbar">
         <div class="item1">
             <img src="img/direccion.svg" alt="Icon Dirección" class="item-icon1">
-            <span class="direccion">Florida 325</span>
+            <span class="direccion"><a href="https://www.google.com.ar/maps/place/Florida+325+c1005,+C1005AAG+CABA/@-34.6042749,-58.3761541,18z/data=!3m1!4b1!4m5!3m4!1s0x95bccacda4c17dc9:0x75b394bd29700b01!8m2!3d-34.6042771!4d-58.3750598" target="_blank">Florida 325</a></span>
         </div>
         <div class="item2">
             <img src="img/telefono.svg" alt="Icon Teléfono" class="item-icon2">
