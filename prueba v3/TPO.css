@@ -82,7 +82,7 @@ body {
     height: 85%;    
 }
 
-.logo:hover {
+.logo:hover , .logo:focus {
     filter: opacity(75%);
 }
 
@@ -384,7 +384,7 @@ button:hover, button:focus {
     height: 85%;    
 }
 
-.logo-footer a:hover {
+.logo-footer a:hover , .logo-footer:focus {
     filter: brightness(0.25);
 }
 
