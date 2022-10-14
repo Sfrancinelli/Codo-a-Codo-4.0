@@ -306,10 +306,10 @@ figcaption {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 45%;
+    width: 95%;
     height: max-content;
     letter-spacing: 1.2px;
-    color: rgb(61, 204, 233);
+    color: #00A9B0;
     text-transform: uppercase;
     font-family: Ubuntu;
     font-size: 1.35em;
@@ -344,6 +344,136 @@ figcaption {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.section-personal {
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: auto;
+}
+
+.conteiner-personal {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.titulo-personal {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: Ubuntu;
+    font-size: 1.85em;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: rgb(32, 32, 32);
+    margin-bottom: 1rem;
+    padding-bottom: 13px;
+}
+
+.titulo-personal::after {
+    content: '';
+    width:5vw;
+    height:.5vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(270deg,#00A9B0 0%, rgb(135, 232, 252) 100%);
+}
+
+.texto-personal {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Lato;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+}
+
+.conteiner-cards-personal {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    height: 600px;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    box-sizing: border-box;
+}
+
+.card-personal {
+    position: relative;
+    display: flex;
+    width: 50%;
+    min-height: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imagen-personal {
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.contenedor-info-cards {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 4vmin;
+}
+
+.nombre-card {
+    position: relative;
+    display: flex;
+    color: #00A9B0;
+    text-align: left;
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 3vmin;
+    letter-spacing: 0.2vmin;
+    padding-top: 1.5vmin;
+    padding-bottom: 1.5vmin;
+}
+
+.puesto-card {
+    position: relative;
+    display: flex;
+    color: rgb(32, 32, 32);
+    text-align: left;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 1.5vmin;
+    letter-spacing: 0.1vmin;
 }
 
 @media screen and (max-width: 1180px){
@@ -485,6 +615,85 @@ figcaption {
         width: 10vw;
         height: 1vw;
     }
+
+    .titulo-estudios {
+        font-size: 1.5em;
+    }
+
+    .titulo-estudios::after {
+        width: 10vw;
+        height: 1vw;
+    }
+
+    .padre-lista-estudios {
+        font-size: 1.25em; 
+    }
+
+    .item-estudio {
+        font-size: .75em; 
+    }
+
+    .titulo-personal::after {
+        width: 10vw;
+        height: 1vw;
+    }
+
+    .titulo-personal {
+        font-size: 1.5em;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .texto-personal {
+        font-size: .85em;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .section-personal {
+        height: auto;
+    }
+
+    .titulo-personal {
+        height: auto;
+        font-size: 1.3em;
+    }
+
+    .texto-personal {
+        height: auto;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+
+    .card-personal {
+        width: 100%;
+        flex-direction: column;
+        min-height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .conteiner-cards-personal {
+        height: 1680px;
+        justify-content: center;
+    }
+
+    .contenedor-info-cards {
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .nombre-card {
+        font-size: 2.5vmin;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .puesto-card {
+        font-size: 1.5vmin;
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 662px){
@@ -508,7 +717,6 @@ figcaption {
         height: 25vw;
     }
 }
-
 
 @media screen and (max-width: 512px){
     .titulo {
@@ -571,6 +779,31 @@ figcaption {
     .box {
         height: 30vw;
     }
+
+    .titulo-estudios {
+        font-size: 1.2em;
+    }
+
+    .padre-lista-estudios {
+        font-size: 1em; 
+    }
+
+    .item-estudio {
+        font-size: .65em; 
+    }
+
+    .titulo-personal {
+        font-size: 1.2em;
+    }
+
+    .texto-personal {
+        font-size: .75em;
+    }
+
+    .conteiner-cards-personal {
+        height: 1550px;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 382px){
@@ -589,5 +822,10 @@ figcaption {
 
     .box a {
         font-size: .75em;
+    }
+
+    .conteiner-cards-personal {
+        height: 1440px;
+        justify-content: center;
     }
 }
