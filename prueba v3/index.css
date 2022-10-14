@@ -374,7 +374,6 @@ figcaption {
     align-items: center;
     justify-content: flex-start;
     text-align: left;
-    font-family: Ubuntu;
     font-size: 1.85em;
     font-weight: 700;
     box-sizing: border-box;
@@ -416,8 +415,8 @@ figcaption {
     flex: 1 1 auto;
     height: 600px;
     flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding-left: 5vw;
     padding-right: 5vw;
     box-sizing: border-box;
@@ -656,7 +655,7 @@ figcaption {
 
     .titulo-personal {
         height: auto;
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .texto-personal {
