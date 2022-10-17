@@ -98,7 +98,7 @@ document.getElementById("encabezado").innerHTML = `
     <div class="icons-nav">
         <a class="redsoc" href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
         <a class="redsoc" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        <a class="redsoc" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="redsoc" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
         <a class="redsoc" target="_blank" href="mailto:ejemplo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
     </div>
     </div>

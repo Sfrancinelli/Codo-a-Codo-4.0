@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="TPO.css">
+    <link rel="stylesheet" href="novedades.css">
     <script src="https://kit.fontawesome.com/a6123d0355.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Lato">
     <title>Inicio</title>
@@ -12,6 +13,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <script src="responsive-nav-bar.js"></script>
+    <style>
+
+    </style>
 </head>
 <body>
 
@@ -22,66 +26,22 @@
         </header>
 
         <main class="contenido-ppal">
-
-            <section class="secciones">
-                <article class="articulos">
-                    <h2>articulos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
-                </article>
-            </section>
-            <section class="secciones">
-                <article class="articulos">
-                    <h2>articulos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h2>articulos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h2>articulos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h2>articulos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h2>articulos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h2>articulos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h2>articulos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h2>articulos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h2>articulos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit voluptates earum expedita placeat modi? Culpa, quisquam enim laborum, voluptates qui odio expedita exercitationem quasi debitis nam voluptatibus. Veritatis, dignissimos!</p>
-                </article>
+            <!-- Voy a crear las secciones de las noticias basándome en una fake API construida por mí -->
+            <section class="noticias">
+                <div id="app">
+                    <div class="container-noticias">
+                       <div v-for="noticia in noticias">
+                            <div class="bloque">
+                                <img :src="noticia.image" class="img-noticias" alt="imagen noticia">
+                                <div class="cuerpo-bloque">
+                                    <h3 class="titulo-noticia">{{noticia.title}}</h3>
+                                    <p class="texto-noticia">{{noticia.text}}</p>
+                                </div>
+                            </div>
+                            <br>
+                       </div> 
+                    </div>
+                </div>
             </section>
 
             <section>
@@ -115,12 +75,6 @@
                     <span class="horario">Lun a Vie:8 a 20hs.</span>
                 </div>
             </div>
-
-            <div class="contenido-aside">
-                <h2>ASIDE</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sapiente possimus animi consequatur tempore dolores voluptates soluta. Quas voluptas, ad debitis quaerat quam nulla animi commodi id, quisquam error hic?</p>
-            </div>
-
         </aside>
 
         <footer class="pie" id="pie">
@@ -128,6 +82,8 @@
         </footer>
 
         <script src="TPO-hyf.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="api.js"></script>
     </div>
 </body>
 </html>
