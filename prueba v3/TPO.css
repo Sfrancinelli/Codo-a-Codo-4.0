@@ -419,7 +419,44 @@ button:hover, button:focus {
     grid-area: info-footer2;
 }
 
-/* BREAKPOINTS */ /*PERSONALIZAR BIEN LAS MEDIAQUERIES*/
+/*IFRAME MAPS SEDE PRINCIPAL*/
+.conteiner-map {
+    border-top: 1px solid rgb(120, 120, 120);
+    padding-top: 15px;
+    margin-top: 1em;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: nowrap column;
+}
+
+.titulo-map {
+    font-size: 1.85em;
+    font-weight: 700;
+    padding-bottom: 13px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.titulo-map::after {
+    content: '';
+    width:5vw;
+    height:.5vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(270deg,#00A9B0 0%, rgb(135, 232, 252) 100%);
+}
+
+.map {
+    width: 99%;
+    border: 1px solid  rgb(135, 232, 252);
+}
+
+.map iframe {
+    width: 100%;
+}
+
+/* BREAKPOINTS */
 @media screen and (max-width: 992px){
 	.root {
 		grid-template-areas: "header header header header"
@@ -569,7 +606,7 @@ button:hover, button:focus {
         flex-direction: row;
         justify-content: center;
         align-items: flex-end;
-        gap: 5px;
+        gap: 8px;
     }
 
     .icons-nav-832 div a {
@@ -776,6 +813,14 @@ button:hover, button:focus {
         color: #27272b;
     }
 
+    .titulo-map {
+        font-size: 1.5em;
+    }
+
+    .titulo-map::after {
+        width: 10vw;
+        height: 1vw;
+    }
 }
 
 @media screen and (max-width: 762px) {
@@ -958,6 +1003,11 @@ button:hover, button:focus {
     .top-navbar-responsive h1 {
         font-size: 2.2em;
         margin-right: 1.2em;
+    }
+
+    .titulo-map {
+        font-size: 1.2em;
+        font-weight: 800;
     }
 }
 
