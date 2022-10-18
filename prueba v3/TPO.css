@@ -769,15 +769,27 @@ button:hover, button:focus {
         }
     }
 
+    @media (max-width: 380px) {
+        .p-n {
+            right: -30%;
+        }
+    }
+
     @media (max-width: 360px) {
         .p-n {
-            right: -52%;
+            right: -28%;
         }
     }
 
     @media (max-width: 345px) {
         .p-n {
-            right: -40%;
+            right: -27.5%;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .p-n {
+            right: -25%;
         }
     }
 
@@ -1075,10 +1087,6 @@ button:hover, button:focus {
 
     .top-navbar-responsive {
         margin:0;
-    }
-
-    .p-n {
-        right: -28%;
     }
 }
 
