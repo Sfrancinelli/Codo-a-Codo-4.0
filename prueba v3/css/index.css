@@ -1,0 +1,830 @@
+.root {
+    grid-template-areas: "header header header header"
+                     "main main main main"
+                     "main main main main "
+                     "footer footer footer footer";
+}
+
+.root .aside {
+    display:none;
+}
+
+.infobar-aside {
+    display:none;
+}
+
+.section-inicio {
+    width: 100%;
+    overflow: hidden;
+}
+
+.centro-inicio {
+    position:relative;
+    width: 100%;
+    background-image: url(bg-index.jpg);
+    padding: 80px 0px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.conteiner-contenido {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom:4px;
+}
+
+.texto-inicio {
+    color: #fff;
+    font-size: 1em;
+    margin-bottom:4px;
+    text-align: center;
+}
+
+.turnos-online {
+    color: #fff;
+    font-size: 1.5em;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding:5px;
+    width: 20%;
+    text-align: center;
+    margin-bottom:4px;
+    margin-top: 5px;
+    transition: all 300ms ease-in-out;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.turnos-online:hover, .turnos-online:focus {
+    background-color:#8E8F8D;
+    border: 2px solid #8E8F8D;
+    color: rgb(245, 237, 237);
+    font-weight: 700;
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+}
+
+.descripcion-inicio {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid rgb(120, 120, 120);
+    padding-top: 15px;
+    border-bottom: 1px solid rgb(120, 120, 120);
+    padding-bottom: 15px;
+}
+
+.conteiner-descripcion {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.titulo-descripcion {
+    font-size: 1.85em;
+    font-weight: 700;
+    padding-bottom: 13px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.titulo-descripcion::after {
+    content: '';
+    width:5vw;
+    height:.5vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(270deg,#00A9B0 0%, rgb(135, 232, 252) 100%);
+}
+
+.texto-descripcion {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.logo-descripcion {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0 10px 0;
+}
+
+.logo-descripcion img {
+    width: 10%;
+}
+
+figcaption {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.planes-inicio {
+    margin:10px 0 10px 0;
+    padding: 3px;
+    border-bottom: 1px solid rgb(120, 120, 120);
+    padding-bottom: 15px;
+}
+
+.conteiner-texto-planes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titulo-planes {
+    font-size: 1.85em;
+    font-weight: 700;
+    padding-bottom: 13px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.titulo-planes::after {
+    content: '';
+    width:5vw;
+    height:.5vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(270deg,#00A9B0 0%, rgb(135, 232, 252) 100%);
+}
+
+.texto-planes {
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0 0 5px 0;
+}
+
+.conteiner-planes {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 11vw;
+    border-radius: 25px;
+    margin: 2px;
+    margin: 0 1%;
+}
+
+.box h2 {
+    font-size: .8em;
+    text-transform:uppercase;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.box h3 {
+    font-size: 2.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.box a {
+    font-size: .9em;
+    border: solid 1px #000;
+    padding: 12px 30px;
+    color: #000;
+    font-weight: 500;
+    border-radius: 70px;
+    display: inline-block;
+    margin-top: 5px;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.box a:hover, .box a:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.2);
+}
+
+.seccion-estudios {
+    margin:10px 0 10px 0;
+    padding: 3px;
+    border-bottom: 1px solid rgb(120, 120, 120);
+    padding-bottom: 15px;
+}
+
+.conteiner-estudios {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titulo-estudios {
+    font-size: 1.85em;
+    font-weight: 700;
+    padding-bottom: 13px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.titulo-estudios::after {
+    content: '';
+    width:5vw;
+    height:.5vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(270deg,#00A9B0 0%, rgb(135, 232, 252) 100%);
+}
+
+.conteiner-lista-estudios {
+    position: relative;
+    display: flex;
+    height: 75%;
+    width: 100%;
+    flex-flow: column wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1rem;
+    box-sizing: border-box;
+}
+
+.padre-lista-estudios {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 95%;
+    height: max-content;
+    letter-spacing: 1.2px;
+    color: #00A9B0;
+    text-transform: uppercase;
+    font-family: Ubuntu;
+    font-size: 1.35em;
+    font-weight: 500;
+    box-sizing: border-box;
+    margin: 0px 0px 0.5rem;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    border-bottom-style: solid;
+    border-bottom-color: ghostwhite;
+    border-bottom-width: unset;
+}
+
+#ultima-lista-estudio {
+    border-bottom: none;
+    padding-bottom:0;
+}
+
+.item-estudio {
+    position: relative;
+    display: flex;
+    width: 100%;
+    color: rgb(71, 71, 71);
+    text-transform: none;
+    font-family: Ubuntu;
+    font-size: .95em;
+    font-weight: 400;
+    line-height: 2;
+    padding-left: 4rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.section-personal {
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: auto;
+}
+
+.conteiner-personal {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.titulo-personal {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 1.85em;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: rgb(32, 32, 32);
+    margin-bottom: 1rem;
+    padding-bottom: 13px;
+}
+
+.titulo-personal::after {
+    content: '';
+    width:5vw;
+    height:.5vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(270deg,#00A9B0 0%, rgb(135, 232, 252) 100%);
+}
+
+.texto-personal {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Lato;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+}
+
+.conteiner-cards-personal {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    height: 600px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    box-sizing: border-box;
+}
+
+.card-personal {
+    position: relative;
+    display: flex;
+    width: 50%;
+    min-height: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imagen-personal {
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.contenedor-info-cards {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 4vmin;
+}
+
+.nombre-card {
+    position: relative;
+    display: flex;
+    color: #00A9B0;
+    text-align: left;
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 3vmin;
+    letter-spacing: 0.2vmin;
+    padding-top: 1.5vmin;
+    padding-bottom: 1.5vmin;
+}
+
+.puesto-card {
+    position: relative;
+    display: flex;
+    color: rgb(32, 32, 32);
+    text-align: left;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 1.5vmin;
+    letter-spacing: 0.1vmin;
+}
+
+@media screen and (max-width: 1180px){
+    .turnos-online {
+        width: 25%;
+    }
+
+    .box {
+        height: 15vw;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+	.root {
+		grid-template-areas: "header header header header"
+						 "main main main main"
+						 "main main main main "
+						 "footer footer footer footer";
+	}
+
+    .root .aside {
+        display:none;
+    }
+
+    .box {
+        width: 60%;
+        height: 20vw;
+        margin: 1% 20%;
+    }
+ }
+ 
+ @media screen and (max-width: 850px) {
+    .root {
+            grid-template-areas: "header header header header"
+                            "aside aside aside aside"
+                            "main main main main"
+                            "footer footer footer footer";
+    }
+
+    .root .aside {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            align-items: flex-end;
+            justify-content: space-between; 
+            height:auto;
+    }
+
+    .infobar-aside {
+             display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            text-align: center;
+            border-radius: 4px;
+            width: 100%;
+            height: auto;
+            font-size: .8em;
+            grid-row: 1 / 2;
+    } 
+
+    .infobar-aside a {
+        text-decoration: none;
+        color: #323436;
+    }
+
+    .centro-inicio {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    .texto-inicio {
+        font-size: 1.2em;
+    }
+
+    .turnos-online {
+        font-size: 1em;
+        width: 25%;
+    }
+
+    .titulo-descripcion {
+        font-size: 1.5em;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    
+    .texto-descripcion {
+        font-size: .85em;
+        font-weight: 300;
+    }
+
+    .titulo-planes {
+        font-size: 1.5em;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .texto-planes {
+        font-size: .85em;
+        font-weight: 300;
+        padding: 0 0 5px 0;
+    }
+
+    .box h2 {
+        font-size: .9em;
+        text-transform:uppercase;
+        font-weight: 500;
+    }
+
+    .box h3 {
+        font-size: 1.8em;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .box a {
+        font-size: .9em;
+        padding: 8px 25px;
+        margin-top: 8px;
+    }
+
+    .titulo-descripcion::after {
+        width: 10vw;
+        height: 1vw;
+    }
+
+    .titulo-planes::after {
+        width: 10vw;
+        height: 1vw;
+    }
+
+    .titulo-estudios {
+        font-size: 1.5em;
+    }
+
+    .titulo-estudios::after {
+        width: 10vw;
+        height: 1vw;
+    }
+
+    .padre-lista-estudios {
+        font-size: 1.25em; 
+    }
+
+    .item-estudio {
+        font-size: .75em; 
+    }
+
+    .titulo-personal::after {
+        width: 10vw;
+        height: 1vw;
+    }
+
+    .titulo-personal {
+        font-size: 1.5em;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .texto-personal {
+        font-size: .85em;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .section-personal {
+        height: auto;
+    }
+
+    .titulo-personal {
+        height: auto;
+        font-size: 1.5em;
+    }
+
+    .texto-personal {
+        height: auto;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+
+    .card-personal {
+        width: 100%;
+        flex-direction: column;
+        min-height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .conteiner-cards-personal {
+        height: 1680px;
+        justify-content: center;
+    }
+
+    .contenedor-info-cards {
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .nombre-card {
+        font-size: 2.5vmin;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .puesto-card {
+        font-size: 1.5vmin;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 662px){
+    .box h2 {
+        font-size: .8em;
+        margin-bottom: 5px;
+    }
+
+    .box h3 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .box a {
+        font-size: .7em;
+        padding: 6px 22px;
+        margin-top: 6px;
+    }
+
+    .box {
+        height: 25vw;
+    }
+}
+
+@media screen and (max-width: 512px){
+    .titulo {
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+
+    .texto-inicio {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .turnos-online {
+        font-size: .8em;
+        font-weight: 600;
+        width: 35%;
+    }
+
+    .titulo-descripcion {
+        font-size: 1.2em;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    
+    .texto-descripcion {
+        font-size: .75em;
+        font-weight: 300;
+    }
+
+    .logo-descripcion img {
+        width: 16%;
+    }
+
+    .titulo-planes {
+        font-size: 1.2em;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .texto-planes {
+        font-size: .75em;
+        font-weight: 300;
+        padding: 0 0 5px 0;
+    }
+
+    .box h2 {
+        font-size: .8em;
+    }
+
+    .box h3 {
+        font-size: 1.5em;
+    }
+
+    .box a {
+        font-size: .7em;
+        padding: 6px 22px;
+        margin-top: 6px;
+    }
+
+    .box {
+        height: 30vw;
+    }
+
+    .titulo-estudios {
+        font-size: 1.2em;
+    }
+
+    .padre-lista-estudios {
+        font-size: 1em; 
+    }
+
+    .item-estudio {
+        font-size: .65em; 
+    }
+
+    .titulo-personal {
+        font-size: 1.2em;
+    }
+
+    .texto-personal {
+        font-size: .75em;
+    }
+
+    .conteiner-cards-personal {
+        height: 1550px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 382px){
+    .box {
+        height: 35vw;
+        margin: 1% 10%;
+    }
+
+    .box h2 {
+        font-size: .7em;
+    }
+
+    .box h3 {
+        font-size: 1.45em;
+    }
+
+    .box a {
+        font-size: .75em;
+    }
+
+    .conteiner-cards-personal {
+        height: 1440px;
+        justify-content: center;
+    }
+}
