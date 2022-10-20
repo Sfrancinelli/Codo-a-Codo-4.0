@@ -413,7 +413,7 @@ figcaption {
     position: relative;
     display: flex;
     flex: 1 1 auto;
-    height: 600px;
+    height: 620px;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
@@ -673,7 +673,7 @@ figcaption {
     }
 
     .conteiner-cards-personal {
-        height: 1680px;
+        height: 1705px;
         justify-content: center;
     }
 

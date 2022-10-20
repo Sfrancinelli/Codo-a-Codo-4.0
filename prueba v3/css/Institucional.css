@@ -189,30 +189,30 @@ body {
     height: auto;
 }
 
-.log-in {
-    width: 100%;
-    font-size: 1.5vw;
-    padding-bottom: 1rem;
-    font-weight: 700;
-}
-
-.log-in a {
-    text-decoration: none;
+.boton-menu {
+    display: block;
+    text-align: center;
     color: white;
-    padding: 0.25rem 1rem 0.25rem 1rem;
-    width: 9rem;
-    border-radius: 10px;
-    box-shadow: 0.1px 0.1px 3px black;
+    padding: 0.4em 0.7em;
     background: linear-gradient(96deg, rgb(61, 204, 233) 0%, rgb(135, 232, 252) 100%);
-    /* transition: all 600ms ease-in-out; */
-    transition-property: all;
-    transition-duration: 600ms;
-    transition-timing-function: ease-in-out;
+    transition: color 0.25s ease-in-out, background 0.50s ease-in-out;
+    border: none;
+    font-size: 1.2vw;
+    margin-bottom: .2em;
+    box-shadow: 0.1px 0.1px 3px black;
+    border-radius: 15px;
+    min-width: 61px;
+    max-height: 45px;
+    max-width: 105px;
 }
 
-.log-in a:hover, .log-in a:focus {
+.boton-menu:hover {
     color: rgb(53, 48, 48);
     background: linear-gradient(96deg, rgb(61, 204, 233) 0%, #D2ED54 100%);
+}
+
+#btn-iniciar-sesion {
+    font-weight: bold;
 }
 
 .icons-nav {
@@ -660,10 +660,10 @@ button:hover, button:focus {
         grid-row: 1 / 2;
     }
 
-    .log-in {
-        font-size: 2.2vw;
-        padding: 0;
-        margin-bottom: 10px;
+    .boton-menu {
+        font-size: 2vw;
+        padding: 0.5em 0.6em;
+        min-width: none;
     }
 
     .icons-nav {
@@ -847,10 +847,9 @@ button:hover, button:focus {
         overflow: visible;
     }
 
-    .log-in {
-        width: 100%;
-        font-size: 2.5vw;
-        font-weight: 700;
+    .boton-menu {
+        font-size: 1.8vw;
+        padding: 0.5em 0.6em;
     }
 
     .root .pie {
@@ -910,10 +909,9 @@ button:hover, button:focus {
         font-size: 1.4em;
     }
 
-    .log-in {
-        width: 100%;
-        font-size: 3vw;
-        font-weight: 700;
+    .boton-menu {
+        font-size: 1.9vw;
+        padding: 0.6em 0.5em;
     }
 
     .infobar-aside {
@@ -1092,39 +1090,11 @@ button:hover, button:focus {
     .p-n {
         right: -28%;
     }
-}
 
-/*CAMBIAR FOOTER PONER ICON ARRIBA A PARTIR DE 560px!!*/
-
-/* FONT BREAKPOINTS */
-/* @media (min-width: 1360px){
-    .root {
-    font-size: 1.8rem;
+    .boton-menu {
+        font-size: 2.6vw;
+        padding: 0.5em 0em;
     }
 }
-
-@media (min-width: 1280px){
-    .root {
-    font-size: 1.6rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .root {
-    font-size: 1.4rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .root {
-    font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 662px) {
-    .root {
-    font-size: 1rem;
-    }
-} */
 
 
