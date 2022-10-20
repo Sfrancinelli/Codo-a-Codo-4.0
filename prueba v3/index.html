@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/TPO.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/a6123d0355.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Lato">
+    <title>Inicio</title>
+    <link rel="icon" type="image/x-icon" href="img/LOGO-PRUEBA.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="js/responsive-nav-bar.js"></script>
+    <script src="js/modales.js" defer></script>
+    <link rel="stylesheet" href="css/modales.css">
+</head>
+<body>
+
+    <div class="root">
+
+        <header class="encabezado">
+
+            <div class="logo-container">
+                <a class="logo" href="index.html">
+                    <img src="img/LOGO-PRUEBA.png" alt="Logo TPO">
+                </a>
+            </div>
+
+            <div class="resto-header"> 
+                <div class="nav-bar">
+                    <nav class="nav">
+                        <ul class="inicio">
+                            <li class="activa">
+                                <a aria-current="page" class="active" href="index.html">INICIO </a>
+                            </li>
+                            <li>
+                                <a href="institucional.html">INSTITUCIONAL </a>
+                            </li>
+                            <li>
+                                <a href="asistencia.html">ASISTENCIA AL PACIENTE </a>
+                            </li>
+                            <li>
+                                <a href="novedades.html">NOVEDADES </a>
+                            </li>
+                            <li>
+                                <a href="contacto.html">CONTACTO </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="icons-nav-832">
+                    <h2>Más información:</h2>
+                    <div>
+                        <a class="redsoc" href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="redsoc" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="redsoc" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram" style="font-size: 1.05em;"></i></a>
+                        <a class="redsoc" target="_blank" href="mailto:ejemplo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>                      
+                </div>
+
+            </div>
+                <div class="top-navbar-responsive">
+                    <h1>Centro Médico "Codo a Codo"</h1>
+                </div>
+
+                <div class="top-navbar">
+                    <div class="item1">
+                        <img src="img/direccion.svg" alt="Icon Dirección" class="item-icon1">
+                        <span class="direccion"><a href="https://www.google.com.ar/maps/place/Florida+325+c1005,+C1005AAG+CABA/@-34.6042749,-58.3761541,18z/data=!3m1!4b1!4m5!3m4!1s0x95bccacda4c17dc9:0x75b394bd29700b01!8m2!3d-34.6042771!4d-58.3750598" target="_blank">Florida 325</a></span>
+                    </div>
+                    <div class="item2">
+                        <img src="img/telefono.svg" alt="Icon Teléfono" class="item-icon2">
+                        <span class="telefono">4581-8538</span>
+                    </div>
+                    <div class="item3">
+                        <img src="img/whatsapp.svg" alt="Icon Whatsapp" class="item-icon3">
+                        <span class="whatsapp">11 4805-7548</span>
+                    </div>
+                    <div class="item4">
+                        <img src="img/horario.svg" alt="Icon Horario" class="item-icon4">
+                        <span class="horario">Lun a Vie:8 a 20hs.</span>
+                    </div>
+                </div>
+
+                <div class="flex-log-icon">
+                    <button id="btn-iniciar-sesion" data-modal-objetivo="#modal-iniciar-sesion"
+                    class="btn-modal-abrir boton-menu">
+                    Log in
+                    </button>
+                    <div class="contenedor-modal" id="contenedor-modal-1">
+                        <div class="modal modal-generico" id="modal-iniciar-sesion">
+                            <div class="modal-header">
+                                <h5 class="modal-titulo">Iniciar sesión</h5>
+                                <button class="btn-modal-cerrar">X</button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#" method="post">
+                                    <fieldset class="label-textbox">
+                                        <label for="cuit_iniciar_sesion">CUIT/CUIL (sin guiones)</label>
+                                        <input id="cuit_iniciar_sesion" name="cuit" type="number"
+                                            min="1" placeholder="Introduzca su CUIT/CUIL..." required>
+                                    </fieldset>
+                                    <fieldset class="label-textbox">
+                                        <label for="contraseña_iniciar_sesion">Contraseña</label>
+                                        <input id="contraseña_iniciar_sesion" name="contraseña" type="password"
+                                            placeholder="Introduzca su contraseña..." required>
+                                    </fieldset>
+                                    <button type="submit">Iniciar sesión</button>
+                                    <fieldset class="label-checkbox">
+                                        <label for="recordar">Recordarme</label>
+                                        <input id="recordar" type="checkbox" checked="checked">
+                                    </fieldset>
+                                    <a role="button" href="#" data-modal-objetivo="#modal-registrarse" class="btn-modal-abrir">¿Todavía no
+                                        tienes una cuenta?</a>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="modal modal-generico" id="modal-registrarse">
+                            <div class="modal-header">
+                                <h5 class="modal-titulo">Registrarse</h5>
+                                <button class="btn-modal-cerrar">X</button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#" method="post">
+                                    <fieldset class="label-textbox">
+                                        <label for="nombre_registrarse">Nombre</label>
+                                        <input id="nombre_registrarse" name="nombre" type="text"
+                                            placeholder="Introduzca su nombre..." required>
+                                    </fieldset>
+                                    <fieldset class="label-textbox">
+                                        <label for="apellido_registrarse">Apellido</label>
+                                        <input id="apellido_registrarse" name="apellido" type="text"
+                                            placeholder="Introduzca su apellido..." required>
+                                    </fieldset>
+                                    <fieldset class="label-textbox">
+                                        <label for="dni_registrarse_registrarse">DNI</label>
+                                        <input id="dni_registrarse" name="dni" type="number"
+                                        min="1" placeholder="Introduzca su DNI..." required>
+                                    </fieldset>
+                                    <fieldset class="label-textbox">
+                                        <label for="cuit_registrarse">CUIT/CUIL (sin guiones)</label>
+                                        <input id="cuit_registrarse" name="cuit" type="number"
+                                        min="1" placeholder="Introduzca su CUIT/CUIL..." required>
+                                    </fieldset>
+                                    <fieldset class="label-textbox">
+                                        <label for="contraseña_registrarse">Contraseña</label>
+                                        <input id="contraseña_registrarse" name="contraseña" type="password"
+                                            placeholder="Introduzca su contraseña..." required>
+                                    </fieldset>
+                                    <button type="submit">Registrarse</button>
+                                    <a role="button" href="#" data-modal-objetivo="#modal-iniciar-sesion" class="btn-modal-abrir">¿Ya
+                                        tienes una cuenta?</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons-nav">
+                        <a class="redsoc" href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="redsoc" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="redsoc" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a class="redsoc" target="_blank" href="mailto:ejemplo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="hamburguesa">
+                    <span class="ham"></span>
+                    <nav class="p-n" id="p-n">
+                    <ul>
+                        <li class="activa">
+                            <a aria-current="page" class="active" href="index.html">INICIO</a>
+                        </li>
+                        <li>
+                            <a href="institucional.html">INSTITUCIONAL </a>
+                        </li>
+                        <li>
+                            <a href="asistencia.html">ASISTENCIA AL PACIENTE </a>
+                        </li>
+                        <li>
+                            <a href="novedades.html">NOVEDADES </a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">CONTACTO </a>
+                        </li>
+                    </ul>
+                    </nav>                        
+                </div> 
+
+        </header>
+
+        <main class="contenido-ppal">
+
+            <section class="section-inicio">
+                <div class="centro-inicio">
+                    <div class="conteiner-contenido">
+                        <h3 class="titulo">Centro Médico "Codo a Codo"</h3>
+                        <p class="texto-inicio">Atención personalizada <br> Asegurada la excelencia</p>
+                        <a href="#" class="turnos-online">TURNOS ONLINE</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="descripcion-inicio">
+                <div class="conteiner-descripcion">
+                    <h3 class="titulo-descripcion">Nuevo Centro Médico "Codo a Codo"</h3>
+                    <p class="texto-descripcion">En Febrero de 1997 la Sociedad Argentina de Socorros "Codo a Codo", comienza a prestar su inicial y primordial servicio de atención médico hospitalario a través del Nuevo Centro Médico "Codo a Codo", integrando uno de los más prestigiosos establecimientos asistenciales con estudios e internación existentes en el país. <br>
+                    Velamos por brindar una excelente atención.
+                    </p>
+                    <figure class="logo-descripcion">
+                        <img src="img/LOGO-PRUEBA.png" alt="Logo centro médico">
+                    </figure>
+                    <figcaption>Codo a Codo</figcaption>          
+                </div>
+            </section>
+
+            <section class="planes-inicio">
+                <div class="conteiner-texto-planes">
+                    <h3 class="titulo-planes">
+                        Planes de Salud
+                    </h3>
+                    <p class="texto-planes">Plan Salud del Centro Médico "Codo a Codo"</p> 
+                    <p class="texto-planes">Ofrecemos opciones que se adaptan a cada etapa de la vida</p>
+                </div>
+                <div class="conteiner-planes">
+                    <div class="box" style="background: linear-gradient(96deg, #0fe4c0 0%, #36d8d0 100%);">
+                        <h2>Plan dirigido a niños</h2>
+                        <h3>
+                            Bambino
+                        </h3>
+                        <a href="plan-salud-bambino.php">Más información</a>    
+                    </div>
+                    <div class="box" style="background: linear-gradient(96deg, #36d8d0 0%, #5eccff 100%);">
+                        <h2>Plan jovenes de 16 a 30 años</h2>
+                        <h3>
+                            Joven
+                        </h3>
+                        <a href="plan-salud-joven.php">Más información</a>    
+                    </div>
+                    <div class="box" style="background: linear-gradient(96deg, #5eccff 0%, #45b4e7 100%);">
+                        <h2>Plan para el grupo familiar</h2>
+                        <h3>
+                            Familia
+                        </h3>
+                        <a href="plan-salud-familia.php">Más información</a>    
+                    </div>
+                </div>           
+            </section>
+
+            <section class="seccion-estudios">
+                <div class="conteiner-estudios">
+                    <div class="titulo-estudios">Listado de estudios
+                    </div>
+                    <div class="conteiner-lista-estudios">
+                        <ul class="padre-lista-estudios">
+                            <p style="margin-bottom: 1rem;">DENSITOMETRÍA</p>
+                            <li class="item-estudio">Densitometría ósea</li>
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <p style="margin-bottom: 1rem;">ECOGRAFÍA</p>
+                            <li class="item-estudio">Eco doppler</li>
+                            <li class="item-estudio">Ecografía general</li>
+                            <li class="item-estudio">Ecografía 4D</li>
+                            <li class="item-estudio">Partes blandas</li>
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <p style="margin-bottom: 1rem;">IMAGENOLOGÍA ODONTOLÓGICA</p>
+                            <li class="item-estudio">Trazados cefalométricos computarizados</li>
+                            <li class="item-estudio">Teleradiografía de cráneo</li>
+                            <li class="item-estudio">Panorámicas dentales</li>
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <p style="margin-bottom: 1rem;">INTERVENCIONISMO MAMARIO</p>
+                            <li class="item-estudio">PAAF (Punción aspirativa c/ aguja fina</li>
+                            <li class="item-estudio">Marcación prequirúrgica</li>
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <p style="margin-bottom: 1rem;">MAMOGRAFÍA</p>
+                            <li class="item-estudio">Magnificación</li>
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <p style="margin-bottom: 1rem;">RADIOLOGÍA DIGITAL</p>
+                            <li class="item-estudio">Espinografía</li>
+                            <li class="item-estudio">Radiología especializada contrastada</li>
+                            <li class="item-estudio">Placas simples</li>
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <p style="margin-bottom: 1rem;">Resonancia</p><li class="item-estudio">Resonancia Magnética</li>
+                        </ul>
+                        <ul class="padre-lista-estudios" id="ultima-lista-estudio">
+                            <p style="margin-bottom: 1rem;">TOMOGRAFíA</p>
+                            <li class="item-estudio">Tomografía Computada</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-personal">
+                <div class="conteiner-personal">
+                    <div class="titulo-personal">Un grupo de expertos expecializados
+                    </div>
+                    <div class="texto-personal">Contamos con un grupo de médicos altamente calificados <br>para realizar estudios de alta complejidad y brindad una <br>atención profesional y humana.
+                    </div>
+                    <div height="10" class="conteiner-cards-personal">
+                        <div class="card-personal">
+                            <img src="img/doctor.webp" alt="Nicolás Ferreyra" class="imagen-personal">
+                            <div class="contenedor-info-cards">
+                                <div class="nombre-card">Dr. Nicolás Ferreyra</div>
+                                <div class="puesto-card">STAFF MÉDICO</div>
+                            </div>
+                        </div>
+                        <div class="card-personal">
+                            <img src="img/doctor.webp" alt="Maximiliano Ferreyra" class="imagen-personal">
+                            <div class="contenedor-info-cards">
+                                <div class="nombre-card">Dr. Maximiliano Ferreyra</div>
+                                <div class="puesto-card">STAFF MÉDICO</div>
+                            </div>
+                        </div>
+                        <div class="card-personal">
+                            <img src="img/doctora.webp" alt="Noelia Rojas" class="imagen-personal">
+                            <div class="contenedor-info-cards">
+                                <div class="nombre-card">Dra. Noelia Rojas</div>
+                                <div class="puesto-card">STAFF MÉDICO</div>
+                            </div>
+                        </div>
+                        <div class="card-personal">
+                            <img src="img/doctora.webp" alt="Melia Pastor" class="imagen-personal">
+                            <div class="contenedor-info-cards">
+                                <div class="nombre-card">Dra. Melia Pastor</div>
+                                <div class="puesto-card">STAFF MÉDICO</div>
+                            </div>
+                        </div>
+                        <div class="card-personal">
+                            <img src="img/doctora.webp" alt="Marina Simoncini" class="imagen-personal">
+                            <div class="contenedor-info-cards">
+                                <div class="nombre-card">Dra. Marina Simoncini</div>
+                                <div class="puesto-card">STAFF MÉDICO</div>
+                            </div>
+                        </div>
+                        <div class="card-personal">
+                            <img src="img/doctor.webp" alt="Cristian Froullet" class="imagen-personal">
+                            <div class="contenedor-info-cards">
+                                <div class="nombre-card">Dr. Cristian Froullet</div>
+                                <div class="puesto-card">STAFF MÉDICO</div>
+                            </div>
+                        </div>
+                        <div class="card-personal">
+                            <img src="img/doctor.webp" alt="Diego Mariano Haberman" class="imagen-personal">
+                            <div class="contenedor-info-cards">
+                                <div class="nombre-card">Dr Diego Mariano Haberman</div>
+                                <div class="puesto-card">Diagnóstico por Imágenes</div>
+                            </div>
+                        </div>
+                        <div class="card-personal">
+                            <img src="img/doctora.webp" alt="Carolina Ales" class="imagen-personal">
+                            <div class="contenedor-info-cards">
+                                <div class="nombre-card">Dra. Carolina Ales</div>
+                                <div class="puesto-card">ÁREA ODONTOLÓGICA</div>
+                            </div>
+                        </div>
+                        <div class="card-personal">
+                            <img src="img/doctor.webp" alt="Santiago Tobin" class="imagen-personal">
+                            <div class="contenedor-info-cards">
+                                <div class="nombre-card">Dr Santiago Tobin</div>
+                                <div class="puesto-card">Densitometría</div>
+                            </div>
+                        </div>
+                        <div class="card-personal">
+                            <img src="img/doctora.webp" alt="Guadalupe Tyrell" class="imagen-personal">
+                            <div class="contenedor-info-cards">
+                                <div class="nombre-card">Dra. Guadalupe Tyrell</div>
+                                <div class="puesto-card">ÁREA ODONTOLÓGICA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="conteiner-map">
+                    <div class="titulo-map">Sede principal</div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.9977144036704!2d-58.375059799999995!3d-34.6042771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacda4c17dc9%3A0x75b394bd29700b01!2sFlorida%20325%20c1005%2C%20C1005AAG%20CABA!5e0!3m2!1sen!2sar!4v1666020751873!5m2!1sen!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="aside">
+
+            <div class="infobar-aside">
+                <div class="item1">
+                    <img src="img/direccion.svg" alt="Icon Dirección" class="item-icon1">
+                    <span class="direccion"><a href="https://www.google.com.ar/maps/place/Florida+325+c1005,+C1005AAG+CABA/@-34.6042749,-58.3761541,18z/data=!3m1!4b1!4m5!3m4!1s0x95bccacda4c17dc9:0x75b394bd29700b01!8m2!3d-34.6042771!4d-58.3750598" target="_blank">Florida 325</a></span>
+                </div>
+                <div class="item2">
+                    <img src="img/telefono.svg" alt="Icon Teléfono" class="item-icon2">
+                    <span class="telefono">4581-8538</span>
+                </div>
+                <div class="item3">
+                    <img src="img/whatsapp.svg" alt="Icon Whatsapp" class="item-icon3">
+                    <span class="whatsapp">11 4805-7548</span>
+                </div>
+                <div class="item4">
+                    <img src="img/horario.svg" alt="Icon Horario" class="item-icon4">
+                    <span class="horario">Lun a Vie:8 a 20hs.</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <footer class="pie">
+
+                <div class="logo-footer">
+                    <a href="index.html">
+                    <img src="img/LOGO-PRUEBA.png" alt="Logo TPO">
+                    </a>
+                </div>
+
+                <div class="info-footer">
+                    <div>
+                        <h5>SUCURSAL C.A.B.A</h5>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Sede Central</p>
+                        <p>FLORIDA 325, CABA.</p>
+                        <p>CP C1199ABB </p>
+                        <P>Tel. 4581-8538</P>
+                        <p>Cel. (+54 11) 4805 7548</p>
+                    </div>
+                </div>
+
+                <div class="info-footer2">
+                    <div>
+                        <h5>SUCURSAL RAMOS MEJÍA</h5>
+                    </div> 
+                    <br>
+                    <div>
+                        <p>Sede segunda</p>  
+                        <p>Avenida de Mayo 2212</p>
+                        <p>CP ********</p>
+                        <p>Tel. 4623-6280</p>
+                        <p>Cel. (+54 11) 9350 5463</p>              
+                    </div>
+                </div>
+
+                <div class="legales-footer">
+                    <h5>LEGALES</h5>
+                    <br>
+                    <p><a href="#" class="linkFooter" analytics="" action="footer-terminos-condiciones" category="home" label="footer terminos y cond">Términos y condiciones de uso</a></p>
+                    <p><a href="#" class="linkFooter" analytics="" action="footer-politica" category="home" label="Footer politica de privacidad">Política de privacidad</a></p>
+                    <p><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa de las y los Consumidores. <br><strong>(Para reclamos ingrese aquí)</strong></a></p>
+                    <br>
+                    <small>Derechos reservados @2022</small>
+                </div>
+                
+        </footer>
+    </div>
+</body>
+</html>

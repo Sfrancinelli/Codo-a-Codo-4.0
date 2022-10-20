@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/TPO.css">
+    <script src="https://kit.fontawesome.com/a6123d0355.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Lato">
+    <title>Inicio</title>
+    <link rel="icon" type="image/x-icon" href="img/LOGO-PRUEBA.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="js/responsive-nav-bar.js"></script>
+    <script src="js/modales.js" defer></script>
+    <link rel="stylesheet" href="css/modales.css">
+</head>
+<body>
+
+    <div class="root">
+
+        <header class="encabezado" id="encabezado">
+
+        </header>
+
+        <main class="contenido-ppal">
+
+           <!--Barra de busqueda que trae los datos de los pacientes de la BBDD-->
+           <div class="input-group">
+            <div class="form-outline">
+              <input type="search" id="form1" class="form-control" />
+              <label class="form-label" for="form1">Search</label>
+            </div>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <section>
+            <div class="conteiner-map">
+                <div class="titulo-map">Sede principal</div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.9977144036704!2d-58.375059799999995!3d-34.6042771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacda4c17dc9%3A0x75b394bd29700b01!2sFlorida%20325%20c1005%2C%20C1005AAG%20CABA!5e0!3m2!1sen!2sar!4v1666020751873!5m2!1sen!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        </main>
+
+        <aside class="aside">
+
+            <div class="infobar-aside">
+                <div class="item1">
+                    <img src="img/direccion.svg" alt="Icon Dirección" class="item-icon1">
+                    <span class="direccion"><a href="https://www.google.com.ar/maps/place/Florida+325+c1005,+C1005AAG+CABA/@-34.6042749,-58.3761541,18z/data=!3m1!4b1!4m5!3m4!1s0x95bccacda4c17dc9:0x75b394bd29700b01!8m2!3d-34.6042771!4d-58.3750598" target="_blank">Florida 325</a></span>
+                </div>
+                <div class="item2">
+                    <img src="img/telefono.svg" alt="Icon Teléfono" class="item-icon2">
+                    <span class="telefono">4581-8538</span>
+                </div>
+                <div class="item3">
+                    <img src="img/whatsapp.svg" alt="Icon Whatsapp" class="item-icon3">
+                    <span class="whatsapp">11 4805-7548</span>
+                </div>
+                <div class="item4">
+                    <img src="img/horario.svg" alt="Icon Horario" class="item-icon4">
+                    <span class="horario">Lun a Vie:8 a 20hs.</span>
+                </div>
+            </div>
+
+            <div class="contenido-aside">
+                <h2>ACCIONES</h2>
+            <p>TEXTO</p>
+            <button btn_succes>NUEVO PACIENTE</button>
+            </div>
+
+        </aside>
+
+        <footer class="pie" id="pie">
+                             
+        </footer>
+
+        <script src="js/TPO-hyf.js"></script>
+    </div>
+</body>
+</html>
