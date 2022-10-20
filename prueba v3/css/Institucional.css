@@ -198,9 +198,9 @@ body {
     transition: color 0.25s ease-in-out, background 0.50s ease-in-out;
     border: none;
     font-size: 1.2vw;
-    margin-bottom: .2em;
+    margin-bottom: .4em;
     box-shadow: 0.1px 0.1px 3px black;
-    border-radius: 15px;
+    border-radius: 10px;
     min-width: 61px;
     max-height: 45px;
     max-width: 120px;
@@ -579,8 +579,9 @@ body {
 
     .boton-menu {
         font-size: 2vw;
-        padding: 0.5em 0.6em;
+        padding: 0.4em 0.6em;
         min-width: none;
+        min-width: 50px;
     }
 
     .icons-nav {
@@ -647,7 +648,7 @@ body {
         position: absolute;
         background: #6f6f81;
         top:100%;
-        right: -73%;
+        right: -66%;
         font-size: .9em;
         border-radius: 15px 0 15px 15px;
         text-align: center;
@@ -655,57 +656,69 @@ body {
         transition: all ease-in-out 700ms;
     }
 
+    @media (max-width: 790px) {
+        .p-n {
+            right: -61%;
+        }
+    }
+
+    @media (max-width: 765px) {
+        .p-n {
+            right: -49%;
+        }
+    }
+
     @media (max-width: 680px) {
         .p-n {
-            right: -69%;
+            right: -48%;
         }
     }
     
-    @media (max-width: 660px) {
+    @media (max-width: 662px) {
         .p-n {
-            right: -76%;
+            right: -59%;
         }
     }
      
     @media (max-width: 610px) {
         .p-n {
-            right: -72%;
+            right: -58%;
         }
     }
 
-    @media (max-width: 580px) {
+    @media (max-width: 594px) {
         .p-n {
-            right: -69%;
+            right: -55%;
+        }
+    }
+
+    @media (max-width: 552px) {
+        .p-n {
+            right: -51%;
+        }
+    }
+
+    @media (max-width: 522px) {
+        .p-n {
+            right: -47%;
         }
     }
 
     @media (max-width: 500px) {
         .p-n {
-            right: -66%;
+            right: -44%;
         }
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 380px) {
         .p-n {
-            right: -59%;
-        }
-    }
-
-    @media (max-width: 400px) {
-        .p-n {
-            right: -57%;
+            right: -12%;
         }
     }
 
     @media (max-width: 360px) {
         .p-n {
-            right: -52%;
-        }
-    }
-
-    @media (max-width: 345px) {
-        .p-n {
-            right: -40%;
+            right: -12%;
         }
     }
 
@@ -766,7 +779,8 @@ body {
 
     .boton-menu {
         font-size: 1.8vw;
-        padding: 0.5em 0.6em;
+        padding: 0.4em 0.6em;
+        min-width: 38px;
     }
 
     .root .pie {
@@ -828,7 +842,7 @@ body {
 
     .boton-menu {
         font-size: 2.5vw;
-        padding: 0.6em 0.5em;
+        padding: 0.5em 0.5em;
     }
 
     .infobar-aside {
@@ -1002,10 +1016,6 @@ body {
 
     .top-navbar-responsive {
         margin:0;
-    }
-
-    .p-n {
-        right: -28%;
     }
 
     .boton-menu {
