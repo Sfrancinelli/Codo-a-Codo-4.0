@@ -522,12 +522,12 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: flex-end;
-        gap: 8px;
     }
 
     .icons-nav-832 div a {
         font-size: 1.8em;
         color: #00A9B0;
+        padding-right: 5px;
     }
 
     .icons-nav-832 div a:hover, .icons-nav-832 a:focus {
