@@ -139,6 +139,104 @@
     height:100%; 
 }
 
+.api {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap:10px;
+    margin-bottom: 30px;
+}
+
+.titulo-covid {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 1.8em;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: rgb(32, 32, 32);
+    margin-bottom: 1rem;
+    padding-bottom: 13px;
+}
+
+.titulo-covid::after {
+    content: '';
+    width:5vw;
+    height:.5vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(270deg,#00A9B0 0%, rgb(135, 232, 252) 100%);
+}
+
+.conteiner-covid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.argentina-covid {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.conteiner-lista-covid {
+    position: relative;
+    display: flex;
+    height: 75%;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1rem;
+    box-sizing: border-box;
+}
+
+.padre-covid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 95%;
+    height: max-content;
+    letter-spacing: 1.2px;
+}
+
+.info-covid {
+    color: #00A9B0;
+    text-transform: uppercase;
+    font-family: Ubuntu;
+    font-weight: 500;
+    margin: 0px 0px 0.5rem;
+    padding-top: 1%;
+    font-size: 1.1em;
+}
+
+.item-covid {
+    color: rgb(71, 71, 71);
+    text-transform: none;
+    font-family: Ubuntu;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-left: 2%;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+}
 
 @media screen and (max-width: 992px){
 	.root {
@@ -250,6 +348,30 @@
     .texto-noticia {
         font-size: 1em;
     }
+
+    .titulo-covid {
+        font-size: 1.6em;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .titulo-covid::after {
+        width: 10vw;
+        height: 1vw;
+    }
+
+    .argentina-covid {
+        font-size: 1.2em;
+    }
+
+    .info-covid {
+        font-size: .9em;
+    }
+    
+    .item-covid {
+        font-size: 1.1em;
+    }
+
 }
 
 @media screen and (max-width: 512px){
@@ -270,4 +392,15 @@
     .texto-noticia {
         font-size: .95em;
     }
+
+    .titulo-covid {
+        font-size: 1.5em;
+    }
+
+    .titulo-covid::after {
+        width: 12vw;
+        height: 1.5vw;
+    }
+
 }
+
