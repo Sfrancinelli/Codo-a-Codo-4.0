@@ -351,23 +351,19 @@ figcaption {
 }
 
 .section-personal {
-    width: 100%;
-    display: flex;
-    flex: 1 1 auto;
-    align-items: stretch;
-    justify-content: center;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    height: auto;
+    margin-top: 20px;
+    padding: min(5vw, 20px) 10px;
 }
 
-.conteiner-personal {
-    position: relative;
+.contenedor-tarjetas {
     display: flex;
-    flex: 1 1 auto;
-    flex-flow: wrap;
-    justify-content: flex-start;
-    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.contenedor-tarjetas > * {
+    flex-grow: 1;
 }
 
 .titulo-personal {
@@ -413,70 +409,25 @@ figcaption {
     margin-bottom: 1rem;
 }
 
-.conteiner-cards-personal {
-    position: relative;
+.tarjeta-medico {
+    flex-basis: 25%;
     display: flex;
-    flex: 1 1 auto;
-    height: 620px;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    box-sizing: border-box;
-}
-
-.card-personal {
-    position: relative;
-    display: flex;
-    width: 50%;
-    min-height: 100px;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.imagen-personal {
-    position: relative;
-    display: flex;
-    border-radius: 50%;
-    width: 4.5rem;
-    height: 4.5rem;
-}
-
-.contenedor-info-cards {
-    position: relative;
-    display: flex;
-    flex: 1 1 auto;
     flex-direction: column;
-    box-sizing: border-box;
-    padding-left: 4vmin;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.8em;
 }
 
-.nombre-card {
-    position: relative;
-    display: flex;
+.tarjeta-medico h3 {
     color: #00A9B0;
-    text-align: left;
-    font-family: Ubuntu;
-    font-weight: 700;
-    font-size: 3vmin;
-    letter-spacing: 0.2vmin;
-    padding-top: 1.5vmin;
-    padding-bottom: 1.5vmin;
 }
 
-.puesto-card {
-    position: relative;
-    display: flex;
-    color: rgb(32, 32, 32);
-    text-align: left;
-    font-family: Lato;
-    font-weight: 500;
-    font-size: 1.5vmin;
-    letter-spacing: 0.1vmin;
+.tarjeta-medico img {
+    width: 25vw;
+    max-width: 150px;
+    border-radius: 100%;
+    margin: 0 0 1em 0;
 }
 
 @media screen and (max-width: 1180px){
@@ -653,10 +604,6 @@ figcaption {
 }
 
 @media screen and (max-width: 769px) {
-    .section-personal {
-        height: auto;
-    }
-
     .titulo-personal {
         height: auto;
         font-size: 1.5em;
@@ -668,28 +615,9 @@ figcaption {
         margin-bottom: 0;
     }
 
-    .card-personal {
-        width: 100%;
-        flex-direction: column;
-        min-height: 100px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .conteiner-cards-personal {
-        height: 1705px;
-        justify-content: center;
-    }
-
     .contenedor-info-cards {
         padding-left: 0px;
         align-items: center;
-    }
-
-    .nombre-card {
-        font-size: 2.5vmin;
-        text-align: center;
-        justify-content: center;
     }
 
     .puesto-card {
@@ -802,11 +730,6 @@ figcaption {
     .texto-personal {
         font-size: .75em;
     }
-
-    .conteiner-cards-personal {
-        height: 1550px;
-        justify-content: center;
-    }
 }
 
 @media screen and (max-width: 382px){
@@ -825,10 +748,5 @@ figcaption {
 
     .box a {
         font-size: .75em;
-    }
-
-    .conteiner-cards-personal {
-        height: 1440px;
-        justify-content: center;
     }
 }
