@@ -41,7 +41,6 @@ body {
 }
 
 /* HEADER CONFIG FLEX PADRE */
-/* Cuando se baja de width:972px se rompe el header. A partir de esa resolución tendriamos que convertir la navbar en un menu desplegable y quizas sacar la info bar de arriba o acotarla. */
 .root .encabezado {     
     /* background-color: #43919B; */
     background-color: #F2F2F2;
@@ -954,7 +953,7 @@ body {
 
     .infobar-aside {
         flex-wrap: nowrap;
-        font-size:.6em;
+        font-size:.6em !important;
     }
 
     .infobar-aside img {

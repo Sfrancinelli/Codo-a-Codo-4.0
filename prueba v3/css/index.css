@@ -323,6 +323,10 @@ figcaption {
     border-bottom-width: unset;
 }
 
+.padre-lista-estudios p {
+    display: inline-block;
+}
+
 #ultima-lista-estudio {
     border-bottom: none;
     padding-bottom:0;
