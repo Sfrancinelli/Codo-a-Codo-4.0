@@ -1,0 +1,175 @@
+{% extends './layouts/base.html' %}
+
+{% block contenido %}
+            <section class="planes-inicio">
+                <div class="conteiner-texto-planes">
+                    <h3 class="titulo-planes">
+                        Planes de Salud
+                    </h3>
+                    <p class="texto-planes">Plan Salud del Centro Médico "Codo a Codo"</p> 
+                    <p class="texto-planes">Ofrecemos opciones que se adaptan a cada etapa de la vida</p>
+                </div>
+                <div class="conteiner-planes">
+                    <div class="box" style="background: linear-gradient(96deg, #0fe4c0 0%, #36d8d0 100%);">
+                        <h2>Plan dirigido a niños</h2>
+                        <h3>
+                            Bambino
+                        </h3>
+                        <a href="#">Más información</a>    
+                    </div>
+                    <div class="box" style="background: linear-gradient(96deg, #36d8d0 0%, #5eccff 100%);">
+                        <h2>Plan jovenes de 16 a 30 años</h2>
+                        <h3>
+                            Joven
+                        </h3>
+                        <a href="#">Más información</a>    
+                    </div>
+                    <div class="box" style="background: linear-gradient(96deg, #5eccff 0%, #45b4e7 100%);">
+                        <h2>Plan para el grupo familiar</h2>
+                        <h3>
+                            Familia
+                        </h3>
+                        <a href="#">Más información</a>    
+                    </div>
+                </div>           
+            </section>
+
+            <section class="seccion-estudios">
+                <div class="conteiner-estudios">
+                    <div class="titulo-estudios">Listado de estudios
+                    </div>
+                    <div class="conteiner-lista-estudios">
+                        <ul class="padre-lista-estudios">
+                            <details>
+                                <summary>
+                                    <p style="margin-bottom: 1rem;">DENSITOMETRÍA</p>
+                                </summary>  
+                                <li class="item-estudio">Densitometría ósea</li>
+                            </details>
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <details>
+                                <summary>
+                                    <p style="margin-bottom: 1rem;">ECOGRAFÍA</p>
+                                </summary>
+                                <li class="item-estudio">Eco doppler</li>
+                                <li class="item-estudio">Ecografía general</li>
+                                <li class="item-estudio">Ecografía 4D</li>
+                                <li class="item-estudio">Partes blandas</li>
+                            </details>
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <details>
+                                <summary>
+                                    <p style="margin-bottom: 1rem;">IMAGENOLOGÍA ODONTOLÓGICA</p>
+                                </summary>
+                                <li class="item-estudio">Trazados cefalométricos computarizados</li>
+                                <li class="item-estudio">Teleradiografía de cráneo</li>
+                                <li class="item-estudio">Panorámicas dentales</li>
+                            </details>                              
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <details>
+                                <summary>
+                                    <p style="margin-bottom: 1rem;">INTERVENCIONISMO MAMARIO</p>
+                                </summary>
+                                <li class="item-estudio">PAAF (Punción aspirativa c/ aguja fina</li>
+                                <li class="item-estudio">Marcación prequirúrgica</li>
+                            </details>                         
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <details>
+                                <summary>
+                                    <p style="margin-bottom: 1rem;">MAMOGRAFÍA</p>
+                                </summary>
+                                <li class="item-estudio">Magnificación</li>
+                            </details>                                                       
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <details>
+                                <summary>
+                                    <p style="margin-bottom: 1rem;">RADIOLOGÍA DIGITAL</p>
+                                </summary>
+                                <li class="item-estudio">Espinografía</li>
+                                <li class="item-estudio">Radiología especializada contrastada</li>
+                                <li class="item-estudio">Placas simples</li>
+                            </details>                                                     
+                        </ul>
+                        <ul class="padre-lista-estudios">
+                            <details>
+                                <summary>
+                                    <p style="margin-bottom: 1rem;">Resonancia</p>
+                                </summary>
+                                <li class="item-estudio">Resonancia Magnética</li>
+                            </details>                            
+                        </ul>
+                        <ul class="padre-lista-estudios" id="ultima-lista-estudio">
+                            <details>
+                                <summary>
+                                    <p style="margin-bottom: 1rem;">TOMOGRAFíA</p>
+                                </summary>
+                                <li class="item-estudio">Tomografía Computada</li>
+                            </details>                                                
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-personal">
+                    <h2 class="titulo-personal">Un grupo de expertos especializados</h2>
+                    <p class="texto-personal">Contamos con un grupo de médicos altamente calificados para realizar estudios de alta complejidad y brindad una atención profesional y humana.</p>
+                    <div class="contenedor-tarjetas">
+                        <div class="tarjeta-medico">
+                            <img src="{{ url_for('static', filename='img/doctor.webp') }}" alt="Imagen del/la profesional">
+                            <h3>Dr. Nicolás Ferreyra</h3>
+                            <p></p>
+                        </div>
+                        <div class="tarjeta-medico">
+                            <img src="{{ url_for('static', filename='img/doctor.webp') }}" alt="Imagen del/la profesional">
+                            <h3>Dr. Maximiliano Ferreyra</h3>
+                            <p></p>
+                        </div>
+                        <div class="tarjeta-medico">
+                            <img src="{{ url_for('static', filename='img/doctora.webp') }}" alt="Imagen del/la profesional">
+                            <h3>Dra. Noelia Rojas</h3>
+                            <p></p>
+                        </div>
+                        <div class="tarjeta-medico">
+                            <img src="{{ url_for('static', filename='img/doctora.webp') }}" alt="Imagen del/la profesional">
+                            <h3>Dra. Melia Pastor</h3>
+                            <p></p>
+                        </div>
+                        <div class="tarjeta-medico">
+                            <img src="{{ url_for('static', filename='img/doctora.webp') }}" alt="Imagen del/la profesional">
+                            <h3>Dra. Marina Simoncini</h3>
+                            <p></p>
+                        </div>
+                        <div class="tarjeta-medico">
+                            <img src="{{ url_for('static', filename='img/doctor.webp') }}" alt="Imagen del/la profesional">
+                            <h3>Dr. Cristian Froullet</h3>
+                            <p></p>
+                        </div>
+                        <div class="tarjeta-medico">
+                            <img src="{{ url_for('static', filename='img/doctor.webp') }}" alt="Imagen del/la profesional">
+                            <h3>Dr Diego Haberman</h3>
+                            <p></p>
+                        </div>
+                        <div class="tarjeta-medico">
+                            <img src="{{ url_for('static', filename='img/doctora.webp') }}" alt="Imagen del/la profesional">
+                            <h3>Dra. Carolina Ales</h3>
+                            <p></p>
+                        </div>
+                        <div class="tarjeta-medico">
+                            <img src="{{ url_for('static', filename='img/doctor.webp') }}" alt="Imagen del/la profesional">
+                            <h3>Dr Santiago Tobin</h3>
+                            <p></p>
+                        </div>
+                        <div class="tarjeta-medico">
+                            <img src="{{ url_for('static', filename='img/doctora.webp') }}" alt="Imagen del/la profesional">
+                            <h3>Dra. Guadalupe Tyrell</h3>
+                            <p></p>
+                        </div>
+                    </div>
+            </section>
+
+{% endblock %}

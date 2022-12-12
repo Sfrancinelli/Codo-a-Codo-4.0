@@ -1,0 +1,283 @@
+{% extends './layouts/base.html' %}
+
+{% block contenido %}
+
+    <style>
+        .contenido-ppal {
+            display: flex;
+            flex-direction:column;
+            flex: 1 1 auto;
+            width: 100%;
+            height:100%;
+            justify-content:center;
+        }
+
+        .seccion-insti {
+            height: 35%;
+            width: 100%;
+            display: flex;
+            flex: 1 1 auto;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        .conteiner-insti {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            font-family: Ubuntu;
+            font-size: 2.5rem;
+            font-weight: 700;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            box-sizing: border-box;
+            color: rgb(32, 32, 32);
+            flex-direction:column;
+        }
+
+        .titulo-insti {
+            margin-bottom:4vw;
+            position:relative;
+            align-self:flex-start;
+        }
+
+        .titulo-insti::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom:-15px;
+            width: 5rem;
+            height: 1vmin;
+            background: linear-gradient(93deg, #00A9B0 0%, rgb(41, 196, 255) 100%);
+        }
+
+        .parrafo-insti {
+            font-family: Lato;
+            font-size: 1rem;
+            font-weight: 300;
+            text-align: left;
+            color: rgb(32, 32, 32);
+            line-height: 1.5;
+        }
+
+        .seccion-insti-info {
+            height: 450px;
+            width: 100%;
+            display: flex;
+            flex: 1 1 auto;
+            -webkit-box-align: stretch;
+            align-items: stretch;
+            -webkit-box-pack: center;
+            justify-content: center;
+            margin-top: 2vh;
+            margin-bottom: 4vh;
+            border-radius: 10px;
+        }
+
+        .conteiner-insti-info {
+            position: relative;
+            display: flex;
+            flex: 1 1 auto;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: border-box;
+            background: linear-gradient(253deg, rgb(255, 254, 254) 0%, rgb(249, 249, 249) 100%);
+            border-radius: 10px;
+        }
+         
+        .segundoconteiner-info {
+            position: relative;
+            display: flex;
+            width: 50%;
+            min-height: 25%;
+            box-sizing: border-box;
+        }
+
+        .icons-info {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            width: 8%;
+            height: auto;
+        }
+
+        
+        .texto-info {
+            position: absolute;
+            top: 15%;
+            left: 22.5%;
+            width: 75%;
+            max-height: 85%;
+            color: rgb(122, 122, 122);
+            text-align: left;
+            font-family: Lato;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 850px) {
+            .seccion-insti-info {
+                height: 190vh;
+            }
+
+            .segundoconteiner-info {
+                width: 100%;
+                min-height: 13%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .conteiner-insti-info {
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+
+            .icons-info {
+            position: absolute;
+            top: 14%;
+            left: 2%;
+            width: 8%;
+            height: auto;
+            }
+
+            .titulo-insti {
+            font-size: 1.5rem;
+            }
+
+            .texto-info {
+            font-size: .6rem;
+            position: relative;
+            display: flex;
+            font-size: .7rem;
+            text-align: center;
+            top: 0px;
+            left: 0px;
+            margin-top: 1rem;
+            }
+
+            .seccion-insti {
+            height: 15%;
+        }
+
+       
+    }
+
+     @media (max-width: 520px) {
+        .seccion-insti {
+            height: 22%;
+        }
+     }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="root">
+
+        <main class="contenido-ppal">
+            <section class="seccion-insti">
+                 <div class="conteiner-insti">
+                    <div class="titulo-insti">25 años brindando servicios
+                    </div>
+                    <div class="parrafo-insti">
+                        <p>Desde su creación es una empresa que se mantiene en crecimiento constante, para lograr el mejor servicio a los pacientes, <strong>actualizándose con las tecnologías mas avanzadas disponibles en el mercado</strong>.<br><br> La capacitación de todo el personal es nuestro orgullo, ya que estamos convencidos que mantener una cúpula inteligente es lo que nos lleva a tomar las mejores decisiones día a día y así poder proveer los mejores servicios que nuestros pacientes necesitan, logrado a partir de <strong>la evaluación minuciosa de las necesidades en el área de la Salud</strong></p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="seccion-insti">
+                <div class="conteiner-insti">
+                    <div class="titulo-insti">Comprometidos con la excelencia
+                    </div>
+                    <div class="parrafo-insti">
+                        <p>El propósito del Centro Médico "Codo a Codo" es la realización de <strong>estudios radiológicos y de diagnóstico por imágenes en todas sus formas, con un alto nivel de calidad, responsabilidad médica y social</strong>, a fin de brindar bienestar y confiabilidad a nuestros pacientes, cumpliendo sus requisitos y alcanzando la plena satisfacción de sus necesidades y la superación de sus expectativas. <br><br>Bregamos porque el Centro se constituya en un espacio de excelencia profesional, tecnológica y de servicios de Buenos Aires y la zona y una referencia para el desarrollo sostenible de la comunidad y la sociedad en general. Para ello se compromete a:</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion-insti-info">
+                <div class="conteiner-insti-info">
+                    <div class="segundoconteiner-info">
+                        <img src="{{ url_for('static', filename='img/svg1.svg') }}" alt="Política 0" class="icons-info">
+                        <div class="texto-info">
+                            <p>Cumplir con los requisitos de la norma ISO 9001 en su versión vigente en pos de la mejora continua.</p>
+                        </div>
+                    </div>
+                    <div class="segundoconteiner-info">
+                        <img src="{{ url_for('static', filename='img/svg2.svg') }}" alt="Política 1" class="icons-info">
+                        <div class="texto-info">
+                            <p>Otorgar a los pacientes una atención rápida, eficaz, cuidada y responsable.</p>
+                        </div>
+                    </div>
+                    <div class="segundoconteiner-info">
+                        <img src="{{ url_for('static', filename='img/svg3.svg') }}" alt="Política 2" class="icons-info">
+                        <div class="texto-info">
+                            <p>Ofrecer seriedad y precisión en los diagnósticos.</p>
+                        </div>
+                    </div>
+                    <div class="segundoconteiner-info">
+                        <img src="{{ url_for('static', filename='img/svg4.svg') }}" alt="Política 3" class="icons-info">
+                        <div class="texto-info">
+                            <p>Invertir en los últimos adelantos tecnológicos y científicos del área de diagnóstico por imágenes.</p>
+                        </div>
+                    </div>
+                    <div class="segundoconteiner-info">
+                        <img src="{{ url_for('static', filename='img/svg5.svg') }}" alt="Política 4" class="icons-info">
+                        <div class="texto-info">
+                            <p>Promocionar campañas de prevención u otras herramientas que impliquen una mejora en la calidad de vida de nuestros pacientes.</p>
+                        </div>
+                    </div>
+                    <div class="segundoconteiner-info"icons-info>
+                        <img src="{{ url_for('static', filename='img/svg6.svg') }}" alt="Política 5" class="icons-info">
+                        <div class="texto-info">
+                            <p>Impulsar el desarrollo y capacitación constante de nuestro personal, promoviendo el compromiso con los pacientes, la institución y el medio.</p>
+                        </div>
+                    </div>
+                    <div class="segundoconteiner-info"icons-info>
+                        <img src="{{ url_for('static', filename='img/svg7.svg') }}" alt="Política 6" class="icons-info">
+                        <div class="texto-info">
+                            <p>Promoverlas relaciones inter-institucionales u otras iniciativas a fin de ampliar el alcance de nuestros servicios y propiciar el desarrollo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="aside">
+
+            <div class="infobar-aside">
+                <div class="item1">
+                    <img src="{{ url_for('static', filename='img/direccion.svg') }}" alt="Icon Dirección" class="item-icon1">
+                    <span class="direccion"><a href="https://www.google.com.ar/maps/place/Florida+325+c1005,+C1005AAG+CABA/@-34.6042749,-58.3761541,18z/data=!3m1!4b1!4m5!3m4!1s0x95bccacda4c17dc9:0x75b394bd29700b01!8m2!3d-34.6042771!4d-58.3750598" target="_blank">Florida 325</a></span>
+                </div>
+                <div class="item2">
+                    <img src="{{ url_for('static', filename='img/telefono.svg') }}" alt="Icon Teléfono" class="item-icon2">
+                    <span class="telefono">4581-8538</span>
+                </div>
+                <div class="item3">
+                    <img src="{{ url_for('static', filename='img/whatsapp.svg') }}" alt="Icon Whatsapp" class="item-icon3">
+                    <span class="whatsapp">11 4805-7548</span>
+                </div>
+                <div class="item4">
+                    <img src="{{ url_for('static', filename='img/horario.svg') }}" alt="Icon Horario" class="item-icon4">
+                    <span class="horario">Lun a Vie:8 a 20hs.</span>
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+</body>
+</html>
+{% endblock %}

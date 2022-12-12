@@ -1,0 +1,56 @@
+{% extends "./layouts/base.html" %}
+{% block contenido %}
+<body>
+
+    <div class="root">
+
+        <!-- <header class="encabezado" id="encabezado">
+
+        </header> -->
+        <main class="contenido-ppal">
+
+           <!--Barra de busqueda que trae los datos de los pacientes de la BBDD-->
+           <div class="input-group">
+            <div class="form-outline">
+              <input type="search" id="form1" class="form-control" />
+              <label class="form-label" for="form1">Search</label>
+            </div>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </main>
+
+        <aside class="aside">
+
+            <div class="infobar-aside">
+                <div class="item1">
+                    <img src="{{ url_for('static', filename='img/direccion.svg') }}" alt="Icon Dirección" class="item-icon1">
+                    <span class="direccion"><a href="https://www.google.com.ar/maps/place/Florida+325+c1005,+C1005AAG+CABA/@-34.6042749,-58.3761541,18z/data=!3m1!4b1!4m5!3m4!1s0x95bccacda4c17dc9:0x75b394bd29700b01!8m2!3d-34.6042771!4d-58.3750598" target="_blank">Florida 325</a></span>
+                </div>
+                <div class="item2">
+                    <img src="{{ url_for('static', filename='img/telefono.svg') }}" alt="Icon Teléfono" class="item-icon2">
+                    <span class="telefono">4581-8538</span>
+                </div>
+                <div class="item3">
+                    <img src="{{ url_for('static', filename='img/whatsapp.svg') }}" alt="Icon Whatsapp" class="item-icon3">
+                    <span class="whatsapp">11 4805-7548</span>
+                </div>
+                <div class="item4">
+                    <img src="{{ url_for('static', filename='img/horario.svg') }}" alt="Icon Horario" class="item-icon4">
+                    <span class="horario">Lun a Vie:8 a 20hs.</span>
+                </div>
+            </div>
+
+            <div class="contenido-aside">
+                <h2>ACCIONES</h2>
+            <p>TEXTO</p>
+            <button btn_succes>NUEVO PACIENTE</button>
+            </div>
+
+        </aside>
+
+    </div>
+</body>
+</html>
+{% endblock %}
