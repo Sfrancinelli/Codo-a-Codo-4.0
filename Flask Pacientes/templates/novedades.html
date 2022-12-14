@@ -11,10 +11,6 @@
 
     <div class="root">
 
-        <header class="encabezado" id="encabezado">
-
-        </header>
-
         <main class="contenido-ppal">
 
             <section class="titulo-novedades">
@@ -102,35 +98,27 @@
                 </div>
             </section>
 
-            <!-- La linea 110 genera un error al traer los datos desde la API -->
+            <!-- SE RECUPERAN LOS DATOS DESDE LA API COVID-19 EN VIVO -->
             <section class="api">
                 <h2 class="titulo-covid">Status COVID - 19</h2>
                 <div id="app">
                     <div class="conteiner-covid">
-                        <h3 class="argentina-covid"> {{ info.country }} </h3>
+                        <h3 class="argentina-covid"> {{ data[0]['Country'] }} </h3>
                         <div class="conteiner-lista-covid">
                             <ul class="padre-covid">
-                                <li class="item-covid"><span class="info-covid">Actualizado:</span>  {{info.updated}}</li>
-                                <li class="item-covid"><span class="info-covid">Población:</span> {{info.population}}</li>
-                                <li class="item-covid"><span class="info-covid"> Casos confirmados:</span> {{info.confirmed}}</li>
-                                <li class="item-covid"><span class="info-covid">Muertes:</span> {{info.deaths}}</li>
-                                <li class="item-covid"><span class="info-covid"> Recuperados:</span> {{info.recovered}}</li>
-                                <li class="item-covid"><span class="info-covid">Expectativa de vida:</span> {{info.life_expectancy}}</li>
+                                <li class="item-covid"><span class="info-covid">Actualizado:</span>  {{ data[0]['Active'] }}</li>
+                                <!-- <li class="item-covid"><span class="info-covid">Población:</span> {{data.population}}</li> -->
+                                <li class="item-covid"><span class="info-covid"> Casos confirmados:</span> {{ data[0]['Confirmed'] }}</li>
+                                <li class="item-covid"><span class="info-covid">Muertes:</span> {{ data[0]['Deaths'] }}</li>
+                                <li class="item-covid"><span class="info-covid"> Recuperados:</span> {{ data[0]['Recovered'] }}</li>
+                                <!-- <li class="item-covid"><span class="info-covid">Expectativa de vida:</span> {{data.life_expectancy}}</li> -->
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section>
-                <div class="conteiner-map">
-                    <div class="titulo-map">Sede principal</div>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.9977144036704!2d-58.375059799999995!3d-34.6042771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacda4c17dc9%3A0x75b394bd29700b01!2sFlorida%20325%20c1005%2C%20C1005AAG%20CABA!5e0!3m2!1sen!2sar!4v1666020751873!5m2!1sen!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </section>
-
+           
         </main>
 
         <aside class="aside">
@@ -156,13 +144,6 @@
 
         </aside>
 
-        <footer class="pie" id="pie">
-                             
-        </footer>
-
-        <script src="{{url_for('static', filename='js/TPO-hyf.js')}}"></script>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <script src="{{url_for('static', filename='js/api.js')}}"></script>
     </div>
 </body>
 </html>

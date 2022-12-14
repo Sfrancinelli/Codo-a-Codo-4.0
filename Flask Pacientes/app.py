@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
 from flaskext.mysql import MySQL
+import requests
 
 app=Flask(__name__)
 mysql = MySQL()
@@ -33,9 +34,17 @@ def institucional():
 def contacto():
     return render_template('./contacto.html')
 
+#No es posible conectar con la API de covid!!
 @app.route('/novedades', methods=['GET'])
 def novedades():
-    return render_template('./novedades.html')
+    #url = 'https://api.covid19api.com/countries'
+    url = 'https://api.covid19api.com/live/country/argentina/status/confirmed'
+    data = requests.get(url)
+    if data.status_code == 200:
+        data = data.json();
+        return render_template('./novedades.html', data=data)
+    else:
+        return 'No se pudo devolver la solicitud'
 
 @app.route('/asistencia', methods=['GET'])
 def asistencia():
