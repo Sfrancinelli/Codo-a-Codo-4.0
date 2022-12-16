@@ -34,14 +34,14 @@ def institucional():
 def contacto():
     return render_template('./contacto.html')
 
-#No es posible conectar con la API de covid!!
+#CONEXION A API COVID-19
 @app.route('/novedades', methods=['GET'])
-def novedades():
-    #url = 'https://api.covid19api.com/countries'
+def novedades():    
     url = 'https://api.covid19api.com/live/country/argentina/status/confirmed'
     data = requests.get(url)
     if data.status_code == 200:
         data = data.json();
+        #print(data[0])
         return render_template('./novedades.html', data=data)
     else:
         return 'No se pudo devolver la solicitud'
